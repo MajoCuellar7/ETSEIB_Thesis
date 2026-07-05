@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex PlantillaTFG"] 1783279798.02548 "PlantillaTFG.aux" "PlantillaTFG.bbl" "PlantillaTFG" 1783279866.73404 0
+["bibtex PlantillaTFG"] 1783280177.15232 "PlantillaTFG.aux" "PlantillaTFG.bbl" "PlantillaTFG" 1783280531.6021 0
   "./bibliography.bib" 1783279797.79129 12499 117ecfe29963ab411a8c29df264c489e ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "PlantillaTFG.aux" 1783279866.44447 71145 8a45d227936a7f61053257555e9383f0 "pdflatex"
+  "PlantillaTFG.aux" 1783280531.29786 71408 9b4c8d0251f40c4070476a76d3ab104a "pdflatex"
   (generated)
   "PlantillaTFG.bbl"
   "PlantillaTFG.blg"
   (rewritten before read)
-["pdflatex"] 1783279863.64862 "/Users/majocuellar/Documents/GitHub/ETSEIB_Thesis/PlantillaTFG.tex" "PlantillaTFG.pdf" "PlantillaTFG" 1783279866.73425 0
+["pdflatex"] 1783280528.44129 "/Users/majocuellar/Documents/GitHub/ETSEIB_Thesis/PlantillaTFG.tex" "PlantillaTFG.pdf" "PlantillaTFG" 1783280531.60231 0
   "/Users/majocuellar/Documents/GitHub/ETSEIB_Thesis/PlantillaTFG.tex" 1783278375.55009 5160 c3f3cf449025c1e25c35d8b512e70bd1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc" 1529098226 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
@@ -313,16 +313,16 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "Chapters/00_Acknowledgements.tex" 1781523503.32834 54 b66daf1fd0514101db622bb291a54829 ""
   "Chapters/01_Abstract.tex" 1783167582.27751 9581 87ce0e1b8ab8522b83d1396b51eba3cf ""
-  "Chapters/02_Preface.tex" 1783247658.25064 4545 22ac1b67bec1ac1d27fced68958dee09 ""
+  "Chapters/02_Preface.tex" 1783280184.74272 4545 22ac1b67bec1ac1d27fced68958dee09 ""
   "Chapters/03_Nomenclature.tex" 1783249885.04526 2077 3989af938de65a44a4e91ef97900945c ""
   "Chapters/04_Introduction.tex" 1783247939.75959 13823 95c748e7da9ead3cfb8e130b22bda1f0 ""
-  "Chapters/05_StateOfArt.tex" 1783093780.6315 12319 8d835bd5a3da38cc557d0a8d1bbe1e78 ""
+  "Chapters/05_StateOfArt.tex" 1783280528.19311 12317 c2e7412582334e0be613e06b5f6e2e55 ""
   "Chapters/06_Methodology.tex" 1783277232.57562 59413 ec622f862884b1264e5ad41b9377cd76 ""
   "Chapters/07_Results.tex" 1783249397.26452 27312 e97c192db70622355165210e655822fe ""
   "Chapters/09_Planing.tex" 1783278639.2229 3841 09bba9bf4d1a05bf9a8c3c80a8845baf ""
   "Chapters/10_EconomicAssessment.tex" 1783259225.14844 6732 bc33069cb84d4346f9254c71c7447962 ""
   "Chapters/11_EnvGen_Assessment.tex" 1783278790.92648 7274 53b0f1e6a406841ab50cd94f38cde701 ""
-  "Chapters/12_Conclusion.tex" 1783279863.40833 9446 1c983e804e46388fe72d691127ebcef7 ""
+  "Chapters/12_Conclusion.tex" 1783280173.79195 9811 3df44151a46d36058a5b8f9ff75f2813 ""
   "Codigo/Test Baterias/Battery_Graphs_Tests/Curve_Charge_20A_4.15V_Jun22.pdf" 1782810405.20181 70698 cc2c79969bceba99ee722c974e644c7d ""
   "Codigo/Test Baterias/Battery_Graphs_Tests/Curve_Discharge_4A_3.0V_June16.pdf" 1782810507.38824 131320 39212626fba8c7d82803d0041076d10d ""
   "Codigo/Test Baterias/Battery_Graphs_Tests/ECM_capacitances_vs_SOC_Param_0A_10A_30A_Jun30.pdf" 1783004909.14089 20598 d4e19bbe2c5d282120ffecb8b5b94f70 ""
@@ -359,12 +359,12 @@
   "Images/InteractionsBetweenFiltersDualEstimation.jpg" 1780059286 96575 16e10748ae0f33f286a07d499cca73f1 ""
   "Images/Test_Setup.png" 1783276905.51844 3725318 7145346dd8436fc2bda9e7bd78c71e80 ""
   "Logos/DREAM_logo.png" 1774972657.25398 184957 fa9474de8dc8e08cbc2da6db0aad248e ""
-  "PlantillaTFG.aux" 1783279866.44447 71145 8a45d227936a7f61053257555e9383f0 "pdflatex"
-  "PlantillaTFG.bbl" 1783279798.1526 8735 65b1fc947f26f9b3e7b71e02489bf103 "bibtex PlantillaTFG"
-  "PlantillaTFG.lof" 1783279866.45067 10114 6eeea92a48f451617585bb406f1731c3 "pdflatex"
-  "PlantillaTFG.out" 1783279866.45034 11284 335ad5bbad0a4c6baabce86624240e77 "pdflatex"
+  "PlantillaTFG.aux" 1783280531.29786 71408 9b4c8d0251f40c4070476a76d3ab104a "pdflatex"
+  "PlantillaTFG.bbl" 1783280177.23468 9184 923d0398a01e36623c50b105cc99320d "bibtex PlantillaTFG"
+  "PlantillaTFG.lof" 1783280531.304 10114 6eeea92a48f451617585bb406f1731c3 "pdflatex"
+  "PlantillaTFG.out" 1783280531.30369 11284 335ad5bbad0a4c6baabce86624240e77 "pdflatex"
   "PlantillaTFG.tex" 1783278375.55009 5160 c3f3cf449025c1e25c35d8b512e70bd1 ""
-  "PlantillaTFG.toc" 1783279866.4506 6602 ee74f731cde5422376f40489c6cddcca "pdflatex"
+  "PlantillaTFG.toc" 1783280531.30394 6602 ab927d2d24fb97cfaa3817935e319ad7 "pdflatex"
   "UPC_logo.PNG" 1783242622 28029 d86de6b26014e76d11bb654d8f3156a9 ""
   "dtk-logos.sty" 1783254569.73627 12267 9102f5400640dffbf10203b2feb65ad4 ""
   (generated)

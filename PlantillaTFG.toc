@@ -74,5 +74,5 @@
 \contentsline {section}{\numberline {8.1}Battery Characterisation}{57}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Parameter Identification}{57}{section.8.2}%
 \contentsline {section}{\numberline {8.3}SOC Estimation with EKF}{58}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Simultaneous SOC and SOH Estimation with Dual EKF}{58}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Simultaneous SOC and SOH Estimation with Dual EKF}{59}{section.8.4}%
 \contentsline {section}{\numberline {8.5}Limitations and Future Work}{59}{section.8.5}%

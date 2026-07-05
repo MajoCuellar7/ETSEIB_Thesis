@@ -46,15 +46,21 @@ the slow RC time constant, the algorithm cannot reliably separate the contributi
 $C_1$ from the initial capacitor voltage, making the individual values unreliable even when the 
 overall voltage fit is reasonable.
 
-The second-order Thévenin \ac{ECM} captures the dominant voltage response of the 
-cell adequately for the purpose of state estimation, as confirmed by the \ac{EKF} validation results. 
-However, the model cannot fully represent the complex electrochemical processes ocurring in a cell. 
-In particular, the steep regions of the \ac{OCV}--\ac{SOC} curve, the fully charged and fully discharged phases. 
-The complex behaviour in these regions cannot fully be captured by the linear RC structure. 
-This is reflected in the numerical unreliability of $R_1$ and $C_1$ at low 
-\ac{SOC} (approximately below $16\%$), and represents a known limitation of the \ac{ECM} approach 
-at the extremes of the operating range.
-
+The second-order Thévenin \acs{ECM} captures the dominant voltage response of the 
+cell adequately for the purpose of state estimation, as confirmed by the \ac{EKF} 
+validation results. However, the model cannot fully represent the complex 
+electrochemical processes occurring in a cell. This trade-off between accuracy and 
+computational feasibility is a recognised characteristic of equivalent-circuit 
+models when compared to electrochemical or analytical approaches, 
+which offer higher-fidelity representations of internal cell phenomena 
+at the cost of implementability in real-time or dynamic simulation 
+environments~\cite{DiazGonzalez2018}. 
+In particular, the steep regions of the 
+\ac{OCV}--\ac{SOC} curve, the fully charged and fully discharged phases. The 
+complex behaviour in these regions cannot fully be captured by the linear RC 
+structure. This is reflected in the numerical unreliability of $R_1$ and $C_1$ at 
+low \ac{SOC} (approximately below $16\%$), and represents a known limitation of 
+the \ac{ECM} approach at the extremes of the operating range.
 \section{SOC Estimation with EKF}
 
 The \ac{SOC} estimator was evaluated across three current profiles representative of different scenarios. 
