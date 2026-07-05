@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  5 JUL 2026 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  5 JUL 2026 22:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -849,24 +849,24 @@ LaTeX Warning: Label `eq:EdisDiscrete' multiply defined.
 )
 \openout1 = `PlantillaTFG.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -875,7 +875,7 @@ LaTeX Font Info:    ... okay on input line 109.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside heightrounded 
+* modes: heightrounded 
 * h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
 * v-part:(T,H,B)=(85.35826pt, 668.63986pt, 91.04872pt)
 * \paperwidth=597.50787pt
@@ -883,13 +883,13 @@ LaTeX Font Info:    ... okay on input line 109.
 * \textwidth=455.24411pt
 * \textheight=663.8003pt
 * \oddsidemargin=13.08827pt
-* \evensidemargin=-15.36449pt
+* \evensidemargin=13.08827pt
 * \topmargin=-26.91173pt
 * \headheight=15.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=60.0pt
-* \marginparwidth=103.0pt
+* \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=28.45274pt
@@ -897,8 +897,8 @@ LaTeX Font Info:    ... okay on input line 109.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -938,61 +938,80 @@ Package caption Info: scrextend package is loaded.
 \caption@addmargin@linewidth=\dimen348
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 109.
- (./PlantillaTFG.out) (./PlantillaTFG.out)
+
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 104.
+
+Package hyperref Info: Link coloring ON on input line 104.
+(./PlantillaTFG.out) (./PlantillaTFG.out)
 \@outlinefile=\write4
 \openout4 = `PlantillaTFG.out'.
 
-LaTeX Info: Redefining \ref on input line 109.
-LaTeX Info: Redefining \eqref on input line 109.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 123.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \eqref on input line 104.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 120.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 123.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 120.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <Logos/DREAM_logo.png, id=260, 1426.6098pt x 596.9502pt>
 File: Logos/DREAM_logo.png Graphic file (type png)
 <use Logos/DREAM_logo.png>
-Package pdftex.def Info: Logos/DREAM_logo.png  used on input line 135.
+Package pdftex.def Info: Logos/DREAM_logo.png  used on input line 132.
 (pdftex.def)             Requested size: 135.52933pt x 56.71085pt.
 <ETSEIB.png, id=262, 179.16937pt x 225.84375pt>
 File: ETSEIB.png Graphic file (type png)
 <use ETSEIB.png>
-Package pdftex.def Info: ETSEIB.png  used on input line 135.
+Package pdftex.def Info: ETSEIB.png  used on input line 132.
 (pdftex.def)             Requested size: 44.79222pt x 56.46078pt.
 <UPC_logo.PNG, id=263, 101.62968pt x 97.86563pt>
 File: UPC_logo.PNG Graphic file (type png)
 <use UPC_logo.PNG>
-Package pdftex.def Info: UPC_logo.PNG  used on input line 136.
+Package pdftex.def Info: UPC_logo.PNG  used on input line 133.
 (pdftex.def)             Requested size: 50.81471pt x 48.93268pt.
 
 
 <ETSEIB_watermark.png, id=264, 179.16937pt x 225.84375pt>
 File: ETSEIB_watermark.png Graphic file (type png)
 <use ETSEIB_watermark.png>
-Package pdftex.def Info: ETSEIB_watermark.png  used on input line 150.
+Package pdftex.def Info: ETSEIB_watermark.png  used on input line 147.
 (pdftex.def)             Requested size: 358.33786pt x 451.68637pt.
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc} <./ETSEIB_watermark.png> <./Logos/DREAM_logo.png> <./ETSEIB.png> <./UPC_logo.PNG>] (./Chapters/00_Acknowledgements.tex) (./Chapters/01_Abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--1
+
+ []
+
+
 
 [1
 
 
 ]
-Overfull \hbox (12.43292pt too wide) in paragraph at lines 12--23
-\T1/qpl/m/n/10.95 tained. The equivalent-circuit pa-ram-e-ters were sub-se-quently iden-ti-fied us-ing an al-ge-braic method,
- []
-
-
 
 [2
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 55.
+LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 59.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/tex-gyre/ts1qpl.fd
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
 )
@@ -1003,9 +1022,9 @@ File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
 
 [4]
 Package acronym Info: Label `acro:ECM' newly defined as it shall be overridden
-although it is yet undefined on input line 128.
+although it is yet undefined on input line 132.
 Package acronym Info: Label `acro:EKF' newly defined as it shall be overridden
-although it is yet undefined on input line 128.
+although it is yet undefined on input line 132.
 )
 
 [5
@@ -1156,22 +1175,22 @@ Package acronym Info: Label `acro:NMC' overridden on input line 45.
 Package acronym Info: Label `acro:BMS' newly defined as it shall be overridden
 although it is yet undefined on input line 48.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 8--165
+Underfull \hbox (badness 10000) in paragraph at lines 8--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--165
+Underfull \hbox (badness 10000) in paragraph at lines 8--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--165
+Underfull \hbox (badness 10000) in paragraph at lines 8--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--165
+Underfull \hbox (badness 10000) in paragraph at lines 8--162
 
  []
 
@@ -1876,10 +1895,10 @@ Package rerunfilecheck Info: File `PlantillaTFG.out' has not changed.
 (rerunfilecheck)             Checksum: 335AD5BBAD0A4C6BAABCE86624240E77;11284.
  ) 
 Here is how much of TeX's memory you used:
- 52570 strings out of 473190
- 1226772 string characters out of 5715801
- 1971122 words of memory out of 5000000
- 74581 multiletter control sequences out of 15000+600000
+ 52573 strings out of 473190
+ 1226837 string characters out of 5715801
+ 1971061 words of memory out of 5000000
+ 74584 multiletter control sequences out of 15000+600000
  628903 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,18n,107p,1251b,982s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1890,7 +1909,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on PlantillaTFG.pdf (78 pages, 7831397 bytes).
+Output written on PlantillaTFG.pdf (78 pages, 7831426 bytes).
 PDF statistics:
  3992 PDF objects out of 4296 (max. 8388607)
  2289 compressed objects within 23 object streams

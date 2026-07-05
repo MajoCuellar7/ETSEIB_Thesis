@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex PlantillaTFG"] 1783280177.15232 "PlantillaTFG.aux" "PlantillaTFG.bbl" "PlantillaTFG" 1783280531.6021 0
+["bibtex PlantillaTFG"] 1783284819.27611 "PlantillaTFG.aux" "PlantillaTFG.bbl" "PlantillaTFG" 1783285047.70489 0
   "./bibliography.bib" 1783279797.79129 12499 117ecfe29963ab411a8c29df264c489e ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "PlantillaTFG.aux" 1783280531.29786 71408 9b4c8d0251f40c4070476a76d3ab104a "pdflatex"
+  "PlantillaTFG.aux" 1783285047.41261 71408 9b4c8d0251f40c4070476a76d3ab104a "pdflatex"
   (generated)
   "PlantillaTFG.bbl"
   "PlantillaTFG.blg"
   (rewritten before read)
-["pdflatex"] 1783280528.44129 "/Users/majocuellar/Documents/GitHub/ETSEIB_Thesis/PlantillaTFG.tex" "PlantillaTFG.pdf" "PlantillaTFG" 1783280531.60231 0
-  "/Users/majocuellar/Documents/GitHub/ETSEIB_Thesis/PlantillaTFG.tex" 1783278375.55009 5160 c3f3cf449025c1e25c35d8b512e70bd1 ""
+["pdflatex"] 1783285044.69703 "/Users/majocuellar/Documents/GitHub/ETSEIB_Thesis/PlantillaTFG.tex" "PlantillaTFG.pdf" "PlantillaTFG" 1783285047.70509 0
+  "/Users/majocuellar/Documents/GitHub/ETSEIB_Thesis/PlantillaTFG.tex" 1783284863.36603 4917 07bb5c7aa775c54f77bee09e58611a12 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc" 1529098226 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -311,8 +311,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1765493411 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Chapters/00_Acknowledgements.tex" 1781523503.32834 54 b66daf1fd0514101db622bb291a54829 ""
-  "Chapters/01_Abstract.tex" 1783167582.27751 9581 87ce0e1b8ab8522b83d1396b51eba3cf ""
+  "Chapters/00_Acknowledgements.tex" 1783282938.74603 976 6461329e7efdb3c7b60368ebf749f82e ""
+  "Chapters/01_Abstract.tex" 1783285044.46052 9611 93a2a508d28b46aaa1039f9ab2ec410a ""
   "Chapters/02_Preface.tex" 1783280184.74272 4545 22ac1b67bec1ac1d27fced68958dee09 ""
   "Chapters/03_Nomenclature.tex" 1783249885.04526 2077 3989af938de65a44a4e91ef97900945c ""
   "Chapters/04_Introduction.tex" 1783247939.75959 13823 95c748e7da9ead3cfb8e130b22bda1f0 ""
@@ -359,12 +359,12 @@
   "Images/InteractionsBetweenFiltersDualEstimation.jpg" 1780059286 96575 16e10748ae0f33f286a07d499cca73f1 ""
   "Images/Test_Setup.png" 1783276905.51844 3725318 7145346dd8436fc2bda9e7bd78c71e80 ""
   "Logos/DREAM_logo.png" 1774972657.25398 184957 fa9474de8dc8e08cbc2da6db0aad248e ""
-  "PlantillaTFG.aux" 1783280531.29786 71408 9b4c8d0251f40c4070476a76d3ab104a "pdflatex"
-  "PlantillaTFG.bbl" 1783280177.23468 9184 923d0398a01e36623c50b105cc99320d "bibtex PlantillaTFG"
-  "PlantillaTFG.lof" 1783280531.304 10114 6eeea92a48f451617585bb406f1731c3 "pdflatex"
-  "PlantillaTFG.out" 1783280531.30369 11284 335ad5bbad0a4c6baabce86624240e77 "pdflatex"
-  "PlantillaTFG.tex" 1783278375.55009 5160 c3f3cf449025c1e25c35d8b512e70bd1 ""
-  "PlantillaTFG.toc" 1783280531.30394 6602 ab927d2d24fb97cfaa3817935e319ad7 "pdflatex"
+  "PlantillaTFG.aux" 1783285047.41261 71408 9b4c8d0251f40c4070476a76d3ab104a "pdflatex"
+  "PlantillaTFG.bbl" 1783284819.35211 9184 923d0398a01e36623c50b105cc99320d "bibtex PlantillaTFG"
+  "PlantillaTFG.lof" 1783285047.41856 10114 6eeea92a48f451617585bb406f1731c3 "pdflatex"
+  "PlantillaTFG.out" 1783285047.41825 11284 335ad5bbad0a4c6baabce86624240e77 "pdflatex"
+  "PlantillaTFG.tex" 1783284863.36603 4917 07bb5c7aa775c54f77bee09e58611a12 ""
+  "PlantillaTFG.toc" 1783285047.41849 6602 ab927d2d24fb97cfaa3817935e319ad7 "pdflatex"
   "UPC_logo.PNG" 1783242622 28029 d86de6b26014e76d11bb654d8f3156a9 ""
   "dtk-logos.sty" 1783254569.73627 12267 9102f5400640dffbf10203b2feb65ad4 ""
   (generated)
