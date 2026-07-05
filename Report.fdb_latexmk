@@ -1,0 +1,17 @@
+# Fdb version 4
+["pdflatex"] 1783256330.84319 "/Users/majocuellar/Documents/GitHub/ETSEIB_Thesis/Report.tex" "Report.pdf" "Report" 1783256330.99583 2
+  "/Users/majocuellar/Documents/GitHub/ETSEIB_Thesis/Report.tex" 1783167124.49196 4737 247039ecd8d719db1b0f016ac4e5033c ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/base/fleqn.clo" 1738182759 4807 9edd535c0e59c8018dd9778563a275fb ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/base/report.cls" 1738182759 23203 7ac64169eac711b8259b91f4833984f3 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/base/size10.clo" 1738182759 8448 5cf247d4bd0c7d5d711bbbdf111fae2e ""
+  "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
+  "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
+  "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "Report.aux" 0 -1 0 "pdflatex"
+  "Report.tex" 1783167124.49196 4737 247039ecd8d719db1b0f016ac4e5033c ""
+  "ethidsc.sty" 0 -1 0 ""
+  (generated)
+  "Report.aux"
+  "Report.log"
+  "Report.pdf"
+  (rewritten before read)

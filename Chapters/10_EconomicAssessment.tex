@@ -1,0 +1,153 @@
+\chapter{Economic Assessment}\label{sec:EconomicAssessment}
+
+This chapter presents an economic analysis of the resources needed in carrying 
+out this Master's thesis, considering the student's working hours, operational 
+expenses, and experimental materials. All monetary values 
+are expressed in euros.
+
+\section{Labour Cost}
+
+This thesis corresponds to 30 \ac{ECTS} credits. As established in Article 4.5 of 
+Spanish Royal Decree~\cite{boe2003rd1125}, one \ac{ECTS} credit 
+represents between 25 and 30 hours of student 
+workload; the lower bound of 25 hours/\ac{ECTS} is adopted here, giving a total 
+estimated workload of $30 \times 25 = 750$ hours. Following the assessment guidelines 
+provided for the elaboration of this section, 
+the student's time is valued at a nominal rate of $15\,Euro/\text{h}$, even though 
+no wage was paid. Table~\ref{tab:LabourCost} distributes the 
+750 hours across the main project phases, proportionally to the duration of each 
+phase in the project timeline presented in Figure~\ref{fig:GanttChart}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lrr}
+        \toprule
+        \textbf{Phase} & \textbf{Hours} & \textbf{Cost [Euro]} \\
+        \midrule
+        Literature review \& background research                    & 187.5 & 2{,}812.50 \\
+        MATLAB software \ac{EKF} framework adaptation               & 281.3 & 4{,}218.75 \\
+        Methodology drafting \& \ac{SOH} algorithm development       &  93.8 & 1{,}406.25 \\
+        Experimental testing \& associated results writing           & 125.0 & 1{,}875.00 \\
+        Final \ac{EKF} integration, results \& thesis completion     &  62.5 &   937.50 \\
+        \midrule
+        \textbf{Total} & \textbf{750.0} & \textbf{11{,}250.00} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Labour cost breakdown by project phase, at $15\,Euro/\text{h}$.}
+    \label{tab:LabourCost}
+\end{table}
+
+\section{Operational Expenses}
+
+The cell was recharged approximately 20 times over the course of the project 
+before most test sessions, drawing 
+approximately $111.4\,\text{Wh}$ per recharge, as measured directly during the 
+charge test (Equation~\ref{eq:EChargeDiscrete}). The power analyser and current 
+clamp were estimated to be in active use for approximately 40 hours in total, at 
+an assumed power of $20\,\text{W}$.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lr}
+        \toprule
+        \textbf{Source} & \textbf{Energy [kWh]} \\
+        \midrule
+        Cell recharging (20 cycles $\times$ 111.4~Wh) & 2.228 \\
+        Laboratory instruments (40~h $\times$ 20~W)   & 0.800 \\
+        \midrule
+        \textbf{Total} & \textbf{3.028} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Estimated electricity consumption.}
+    \label{tab:Electricity}
+\end{table}
+
+Using the 2026 annual average regulated electricity price of 
+$0.128\,Euro/\text{kWh}$~\cite{PVPC2026}, the total electricity cost was:
+
+\begin{equation}
+    3.028\,\text{kWh} \times 0.128\,Euro/\text{kWh} = 0.387\,Euro
+\end{equation}
+
+\section{Experimental Materials}
+
+The cell characterisation setup required nine high-power resistors, used as the 
+discharge load bank for all discharge tests, at an approximate 
+unit cost of $4.93\,Euro$ each, provided by the eRacing team:
+
+\begin{equation}
+    9 \times 4.93\,Euro = 44.37\,Euro
+\end{equation}
+
+The test setup also included a Texas Instruments microcontroller and six power 
+inductors, which were provided by the eRacing team as part of the existing test bench, 
+and two Welion SHP270--30 cells, also provided by the team. The individual purchase 
+costs of these items were not available at the time of writing and are therefore 
+not itemised in this work.
+
+\section{Software Licensing}
+
+MATLAB was used throughout this work for algorithm implementation and 
+simulation. Although the licence used was provided by the university, 
+its economic value 
+is estimated using the listed MathWorks Student annual subscription for 2026 of 
+$85\,Euro/\text{year}$~\cite{matlabpricing2026}, 
+prorated for approximately $5.3$ months during which the software was actively used for 
+this work:
+
+\begin{equation}
+    85\,Euro/\text{year} \times \frac{5.3}{12} = 37.54\,Euro
+\end{equation}
+
+\section{Total Cost}
+
+Table~\ref{tab:TotalCost} summarises the total estimated cost of this thesis.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lr}
+        \toprule
+        \textbf{Item} & \textbf{Cost [Euro]} \\
+        \midrule
+        Student labour (750~h $\times$ 15~Euro/h)     & 11{,}250.00 \\
+        Electricity                                 &      0.39 \\
+        Experimental materials (resistors)          &     44.37 \\
+        MATLAB licence (prorated)              &     37.54 \\
+        \midrule
+        \textbf{Total (excl.\ VAT)}                 & \textbf{11{,}332.30} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Total estimated cost of the thesis.}
+    \label{tab:TotalCost}
+\end{table}
+
+The total cost of the work amounts to $11{,}332.30\,Euro$.
+
+\section{Economic Assessment Discussion}
+
+The labour cost accounts for approximately $98\%$ of the 
+estimated budget. The majority of 
+the effort was intellectual and computational (literature review, algorithm 
+development, and thesis writing) rather than reliant on equipment or 
+materials, since the experimental setup used cells, instrumentation, and a test 
+bench already available to the eRacing team and the university, at minimal 
+marginal cost to this specific project.
+
+% At $15\,€/\text{h}$, the total labour cost of $11{,}250\,€$ for 750 hours is 
+% considerably below what an equivalent number of hours would cost at a typical 
+% junior engineer's billing rate in Spain (commonly in the range of 
+% $25$--$40\,€/\text{h}$), suggesting that this figure represents a conservative 
+% lower bound on the real economic value of the work performed. On the other hand, 
+% the reuse of existing laboratory infrastructure (power analyser, current clamp, 
+% test bench components, and battery cells already owned by the eRacing team) kept 
+% the marginal experimental cost extremely low, at under $60\,€$ in total. This 
+% highlights one of the practical advantages of the algebraic parameter 
+% identification method used in this work: because it requires substantially 
+% shorter tests than conventional characterisation approaches, the associated 
+% equipment usage time, and therefore its amortised cost, is correspondingly 
+% reduced.
+
+% Overall, the total cost obtained is reasonable for a Master's thesis of this scope 
+% and is consistent with projects of a similar academic and technical nature, in 
+% which most of the value generated stems from the researcher's own time rather 
+% than from capital expenditure.

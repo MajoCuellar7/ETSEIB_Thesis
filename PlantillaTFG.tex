@@ -1,0 +1,183 @@
+
+
+\documentclass[a4paper,11pt, titlepage, twoside]{report}
+
+%Cedit a tots els estudiants futurs
+\title{Plantilla Per a TFG-TFM ETSEIB}
+\author{Andrea Serrano Costafreda i Bartomeu Costa Prats }
+\date{gener 2019}
+
+\usepackage[utf8]{inputenc}
+
+% Language and font encodings
+\usepackage[english]{babel} %spanish, english, ...
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\setlength{\parskip}{4mm}
+\setlength{\footskip}{60pt}
+\setlength{\headheight}{15pt}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm, bottom=3.2cm, inner=3cm, outer=2cm, footnotesep=1cm, heightrounded]{geometry}
+
+
+%% Useful packages
+
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage[numbers]{natbib}
+\usepackage{systeme}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[firstpage]{draftwatermark}
+\usepackage{transparent}
+\usepackage{textcomp} %podem escriure ``o'' amb la comanda \textdegree també € amb \texteuro
+\usepackage[gen]{eurosym} %tb official en lloc de ``gen''
+\usepackage[section]{placeins} %Evita que les figures saltin de secció
+\usepackage{fancyref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{mathtools}
+\usepackage{commath}
+\usepackage{scrextend}%Indentar un bloc sencer
+\usepackage{tgpagella}
+\usepackage{dtk-logos}
+
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{fancyhdr} 
+\usepackage{float}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+\usepackage[printonlyused]{acronym} 
+\usetikzlibrary{decorations.pathreplacing, positioning}
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\usepackage{xcolor} % Required to define custom colors
+\usepackage{hyperref}
+
+\definecolor{crimson}{RGB}{153, 0, 0}
+\definecolor{numbers}{RGB}{120, 0, 0}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=crimson,
+    urlcolor=teal
+}
+\AtBeginDocument{
+    \makeatletter
+    \let\oldref\ref
+    \DeclareRobustCommand{\ref}[1]{{\hypersetup{linkcolor=numbers}\oldref{#1}}}
+    \DeclareRobustCommand{\eqref}[1]{{\hypersetup{linkcolor=numbers}\oldref{#1}}}
+    \makeatother
+}
+\newcommand{\chapterbreak}%{\cleardoublepage}
+
+
+%%Caps de pagina i peus (E/O (even/odd), L/C/R (left/center/right) y H/F (header/footer))
+\fancyhf{}
+% \fancyhead[ER]{Memòria}
+% \fancyhead[OL]{Implementation of State of Charge and State of Health Algorithm for a Battery Management System for a Racing Electric Motorcycle}
+% \fancyhf[ELH, ORH]{\thepage}
+%\fancyfoot[C]{}
+% \fancyfoot[EL, OR]{
+% \includegraphics[scale=0.2]{ETSEIB_watermark.png}}
+\pagestyle{fancy}
+\raggedbottom
+
+\SetWatermarkText{\hspace{9mm}\includegraphics[scale=2]{ETSEIB_watermark.png}}
+\SetWatermarkAngle{0}
+\SetWatermarkLightness{0.15}
+
+\begin{document}
+\renewcommand{\refname}{Bibliografia}
+\begin{titlepage}
+    {\centering
+    {\Huge Master Thesis}\\
+    \vspace{5mm}
+    % {\Large \textbf{Grau en Enginyeria en Tecnologies Industrials (GETI)}}\\
+    \vspace{15mm}
+    \Huge \textbf{Implementation of State of Charge and State of Health Algorithm for a Battery Management System for a Racing Electric Motorcycle}\\
+    \vspace{10mm}
+    % \Huge\textbf{MEMÒRIA}\\ %Si e lloc del dia de la darrera edició es vol una data fixa, elimineu \today i poseu la data
+    }
+    \vspace{25mm}
+    \hspace{2mm}
+    \begin{tabular}{l@{ } l}
+        \vspace{5mm}
+        \Large \textbf{Autor:} & \Large{María José Cuéllar Mejía} \\
+        \vspace{2mm}
+        \Large\textbf{Director:} & \Large{Prof. Dr. Francisco Díaz González}\\
+        \vspace{2mm}
+        \Large\textbf{Director:} & \Large{Prof. Dr. Joan Gabriel Bergas Jané}\\
+        
+        %  \Large\textbf{Convocatòria: } & \Large{data}\\
+    \end{tabular}\par
+    \vspace{35mm}
+    {\centering
+    \includegraphics[scale=0.095]{Logos/DREAM_logo.png}\includegraphics[scale=0.25]{ETSEIB.png}
+     \includegraphics[scale=0.5]{UPC_logo.PNG}\\
+     \vspace{2mm}
+    {European Master in Dynamics of Renewable-based Power Systems}\\
+    \vspace{2mm}
+    {Universitat Politècnica de Catalunya (UPC)}\\
+    \vspace{2mm}
+    {Hochschule für Technik und Wirtschaft (HTW)} \\
+    \vspace{2mm}
+    {École Centrale Nantes (ECN)}\\
+    \par
+    }
+    \centering
+    \vspace{10mm}
+    \Large\today\\ 
+    \end{titlepage}
+%\maketitle
+
+\clearpage
+
+\pagenumbering{roman} 
+
+\input{Chapters/00_Acknowledgements}
+\input{Chapters/01_Abstract}
+
+\tableofcontents
+\listoffigures
+
+\input{Chapters/03_Nomenclature}
+\input{Chapters/02_Preface}
+
+\thispagestyle{empty}
+\null\newpage 
+\pagenumbering{arabic}
+
+\input{Chapters/04_Introduction}
+\input{Chapters/05_StateOfArt}
+\input{Chapters/06_Methodology}
+\input{Chapters/07_Results}
+\input{Chapters/09_Planing}
+\input{Chapters/10_EconomicAssessment}
+\input{Chapters/11_EnvGen_Assessment}
+\input{Chapters/12_Conclusion}
+
+\bibliographystyle{unsrtnat}
+\bibliography{bibliography}
+ 
+ 
+\end{document}

@@ -1,0 +1,140 @@
+% http://www.idsc.ethz.ch/education/theses-semester-projects.html
+% IDSC LaTeX Thesis Template
+% 
+% Author(s):	Eric Müller
+% 				Institute for Dynamic Systems and Control
+% 				Swiss Federal Institute of Technology (ETH) Zurich
+% 
+% Created:		2004/04/02  (Eric Mueller)
+% 
+% Notes: Has been tested on Windows 7 + MikTeX + TeXnicCenter
+%
+% Revisions: 	2009/05/29  (Soren Ebbesen)
+% 				    2011/03/22	(Soren Ebbesen)
+%             2013/03/08	(Soren Ebbesen)
+%             2014/03/13	(Soren Ebbesen)
+% ______________________________________________________________________________
+\documentclass[10pt,twoside,a4paper,fleqn]{report}
+
+
+\usepackage[english,mt]{ethidsc} % Special IDSC styles and commands      	
+								 % {german}/english: language of headings, etc.
+								 % {st}/bt/mt: {semester}/bachelor/master thesis
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{fancyhdr} 
+\usepackage{float}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+% \usepackage{eurosym}
+% \usepackage{array}
+\usetikzlibrary{decorations.pathreplacing, positioning}
+% \usepackage{hyperref}
+							
+% Page header (don't change)____________________________________________________
+\setlength{\parindent}{0em}                 % Disable parindent
+\rhead[\nouppercase{\rightmark}]{\thepage}  % Special headings
+\lhead[\thepage]{\nouppercase{\leftmark}}   % Special headings
+\cfoot{}                                    % Special headings
+
+\usepackage{xcolor} % Required to define custom colors
+\usepackage{hyperref}
+
+\definecolor{crimson}{RGB}{153, 0, 0}
+\definecolor{numbers}{RGB}{120, 0, 0}
+
+\hypersetup{
+    colorlinks=true,       % Keeps the text colored instead of having boxes around it
+    linkcolor=black,    % Color for Table of Contents and Acronyms
+    citecolor=crimson,     % Color for bibliography citations
+    urlcolor=teal          % Color for web links
+}
+
+\AtBeginDocument{
+  \let\oldref\ref
+  \DeclareRobustCommand{\ref}[1]{{\hypersetup{linkcolor=numbers}\oldref{#1}}}
+}
+
+% % Optional customization to make links look clean
+% \hypersetup{
+%     colorlinks=true,       % false: boxed links; true: colored links
+%     linkcolor=black,        % color of internal links (ToC, acronyms, etc.)
+%     citecolor=crimson,       % color of links to bibliography
+%     urlcolor=black          % color of external links
+% }
+
+\usepackage[printonlyused]{acronym} 
+% Title page (please fill in)___________________________________________________
+% \title{Something to do with the SOC of a Battery}
+\title{Implementation of State of Charge and State of Health Algorithm for a Battery Management System for a Racing Electric Motorcycle}
+% - Implementation and Validation of State of Charge and State of Health Algorithm for a Battery Management System for a Racing Electric Motorcycle}
+% SOC, with SOH added through dual estimation.
+
+\studentA{María José Cuéllar Mejía}
+% \ethidA{97-906-739}
+% \semesterA{5}
+\emailA{maria.jose.cuellar@estudiantat.upc.edu}
+
+\supervision{Prof. Dr. Francisco Díaz González\\ Prof. Dr. Joan Gabriel Bergas Jané}
+\date{July 2026}
+
+\identification{Project Identifier XX-YY-ZZ} 		% Project identifier
+
+\infopage
+\declaration
+
+% Begin document________________________________________________________________
+\begin{document}
+
+\maketitle 							% Create title page
+
+
+% Preamble______________________________________________________________________
+
+\pagenumbering{roman} 				% Begin roman page numbering (i,ii,...)
+
+% \input{Chapters/preamble}
+\input{Chapters/00_Acknowledgements}
+\input{Chapters/01_Abstract}
+\tableofcontents
+\input{Chapters/03_Nomenclature}
+\input{Chapters/02_Preface}
+% \cleardoublepage
+
+% Chapters______________________________________________________________________
+
+\pagestyle{fancy}               	% Fancy headings
+\pagenumbering{arabic}				% Begin arabic page numbering (1,2,...)
+
+\input{Chapters/04_Introduction}
+\input{Chapters/05_StateOfArt}
+% \input{Chapters/howto.tex}
+% \cleardoublepage
+\input{Chapters/06_Methodology}
+\input{Chapters/07_Results}
+\input{Chapters/09_Planing}
+\input{Chapters/10_EconomicAssessment}
+\input{Chapters/11_EnvGen_Assessment}
+\input{Chapters/12_Conclusion}
+% \cleardoublepage
+% \input{}
+% \cleardoublepage
+% \input{}
+% \cleardoublepage
+% ...
+
+% Appendix______________________________________________________________________
+\appendix
+% \input{Chapters/appendix}
+
+
+% Bibliography__________________________________________________________________
+% Literature (Additional references can be added to the .bib-file manually, or by using, for example, the free application JabRef). Compile in the following order: latex -bibtex -latex -latex
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\end{document}

@@ -1,0 +1,57 @@
+\chapter*{Preface}\label{sec:Preface}
+% (1 pagina) \\
+% Cuales son los antecedentes que motivan este proyecto: por que este proyecto es relevante en este momento?
+% la motivación por que es necesario checar el soc de la moto? \\
+% Pues que se estan utilizando vehículos eléctricos ahora. Y por seguridad se tiene que vigilar las baterias
+
+% (maybe i can give more fun facts here (?))\\
+The transportation sector is the primary source of direct greenhouse gas emissions in the United States, accounting 
+for 28\% of the national total~\cite{epa_transportation_2024}. In the European Union, this sector is responsible for
+approximately one-fifth of total \ac{CO2} emissions. The shift towards electric mobility is being accelerated by regulations, 
+such as the EU's plan for all new cars and vans to be zero-emission by 2035. Consequently, the EU estimates that battery-electric vehicles
+will dominate the market~\cite{europarl_2022_cars}.
+\\
+\\
+\acp{EV} are constrained by their battery energy capacity, as the size and energy density of the battery pack 
+determine the vehicle's driving range~\cite{plett2015battery}.~\ac{Li-ion} batteries have played a 
+major role in the decarbonisation of mobility due to their lightweight characteristics and high efficiency.
+\ac{Li-ion} batteries have addressed these limitations and have emerged as a widespread technology for 
+electric mobility~\cite{IPCC2022_Mitigation}, replacing and outperforming other battery technologies such as lead-acid 
+or nickel-metal hydride~\cite{ma16176063}. However, their performance
+depends on factors such as the temperature, current loads, and charge-discharge cycles~\cite{Bosello2025}. 
+Another critical aspect concerns the safety risks associated 
+with overcharging or overdischarging, as these can trigger 
+internal chemical reactions 
+or short-circuiting~\cite{plett2015battery}. Due to these challenges and to guarantee optimal performance, longevity, and safety, 
+accurate monitoring of the battery state, as well as individual cell voltages and temperatures, is essential~\cite{Bosello2025}.
+\\
+\\
+% \textit{(here saying that the SOC and SOH is super important, why do we measure them? how do we measure them?)} \\
+Among critical internal states required for effective monitoring are the \ac{SOC} and \ac{SOH}. 
+As these variables cannot be directly measured by any sensor, they must be estimated from measurable
+signals, such as voltage, current, and temperature. Estimation algorithms vary in complexity and accuracy. 
+In high-performance and 
+safety-critical systems, the consequences of estimation errors extend beyond suboptimal performance and 
+may constitute a safety risk. Inaccurate \ac{SOC} estimation can 
+lead to an inefficient use of battery capacity and cell damage. Similarly, incorrect \ac{SOH} can lead to unpredictable system 
+behaviour and unreliability~\cite{plett2015battery}.
+\\
+% \\
+% \textit{(and then taking all that i have said into the racing motorcycle, like maybe what they are using, or maybe like yeah they are using 
+% this type of battery and reach this voltage, and say wow that's a really high voltage, jesus, that would be dangerous if someone is 
+% not checking on that. how do WE the race team read the voltage and temp from the battery --> BMS!)}
+\\
+The eRacing team at ETSEIB designs and develops an electric motorcycle to compete at the international MotoStudent competition.
+To meet the performance requirements at different track conditions~\cite{MotoStudent2026Regulations}, the vehicle is powered by \ac{NMC} 
+batteries, a type of \ac{Li-ion} battery chemistry. The system operates at high voltages, which requires safety protocols to mitigate operational 
+hazards. 
+Consequently, the \ac{BMS} is responsible for monitoring individual cell voltages and temperatures in real-time, as a safety requirement and
+as a necessary input for the State of Charge and State of Health estimation. However, achieving an accurate real-time state estimation 
+remains a challenge, 
+particularly under the dynamic current/voltage profiles of a race.
+\\
+\\
+This work addresses this challenge by developing and validating a model-based dual estimation framework for simultaneous 
+\ac{SOC} and \ac{SOH} estimation of a $30$ Ah / $111$ Wh \ac{NMC} battery~\cite{welion2026shp270} used in the eRacing electric motorcycle. 
+A second-order RC equivalent circuit model is parameterised through experimental characterisation, and dual 
+Extended Kalman Filters are implemented to estimate battery states under dynamic operating conditions.

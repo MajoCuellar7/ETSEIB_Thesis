@@ -1,0 +1,162 @@
+\chapter{Environmental Assessment}\label{sec:EnvironmentalAssessment}
+
+This chapter assesses the environmental impact of carrying out this Master's 
+thesis, expressed in terms of greenhouse gas emissions, \ac{CO2e}, resulting 
+from the electricity consumed during the experimental and computational work.
+
+\section{Electricity Consumption}
+
+Three sources of electricity consumption were considered: the energy drawn from 
+the grid to recharge the cell, the operating power of the laboratory instruments 
+during the tests, and the power consumed by the student's laptop 
+throughout the project.
+
+\paragraph{Cell recharging.} The cell was fully recharged approximately 15 times 
+over the course of the characterisation and validation tests, drawing 
+approximately $111.4\,\text{Wh}$ per charge, as measured directly during the 
+charge test (Equation~\ref{eq:EChargeDiscrete}):
+
+\begin{equation}
+    15 \times 111.4\,\text{Wh} = 1.671\,\text{kWh}
+\end{equation}
+
+\paragraph{Laboratory instruments.} The power analyser, cycler, and current clamp 
+were in active use for a total of approximately $70.5$ hours, distributed across 
+the four test as summarised in Table~\ref{tab:InstrumentHours}, at an 
+assumed operating power of $20\,\text{W}$:
+
+\begin{equation}
+    70.5\,\text{h} \times 20\,\text{W} = 1.410\,\text{kWh}
+\end{equation}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lr}
+        \toprule
+        \textbf{Test campaign} & \textbf{Hours} \\
+        \midrule
+        Charge tests (15 sessions $\times$ 2~h)                  & 30.0 \\
+        Discharge tests (2 sessions $\times$ 7~h)                & 14.0 \\
+        Pulse discharge tests (2 sessions $\times$ 5~h)          & 10.0 \\
+        Random step-current tests (2 full $\times$ 6~h, 3 trial $\times$ 1.5~h) & 16.5 \\
+        \midrule
+        \textbf{Total} & \textbf{70.5} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Estimated instrument usage hours by test campaign.}
+    \label{tab:InstrumentHours}
+\end{table}
+
+\paragraph{Personal computer.} The student's laptop was used for approximately 
+$500$ hours over the course of the project on MATLAB simulations for data 
+processing, and thesis writing at an average power draw of $30\,\text{W}$. 
+Approximately two weeks were spent working from home during the 
+literature review phase, with the remaining time split approximately $30\%$ at public 
+libraries and $70\%$ in the laboratory.
+
+\begin{equation}
+    500\,\text{h} \times 30\,\text{W} = 15.000\,\text{kWh}
+\end{equation}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lr}
+        \toprule
+        \textbf{Source} & \textbf{Energy [kWh]} \\
+        \midrule
+        Cell recharging                & 1.671 \\
+        Laboratory instruments         & 1.410 \\
+        Personal laptop                & 15.000 \\
+        \midrule
+        \textbf{Total}                 & \textbf{18.081} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Total estimated electricity consumption.}
+    \label{tab:TotalElectricityEnv}
+\end{table}
+
+\section{Greenhouse Gas Emissions}
+
+The Spanish national electricity grid mix emission factor for 2025 
+is $0.258\,\text{kg}\,\ac{CO2e}/\text{kWh}$, 
+consistent with the emission factors presented by the Catalan Office for Climate 
+Change~\cite{canviclimatic}. Applying this factor to the total electricity 
+consumption:
+
+\begin{equation}
+    18.081\,\text{kWh} \times 0.258\,\text{kg}\,\ac{CO2e}/\text{kWh} = 4.665\,\text{kg}\,\ac{CO2e}
+\end{equation}
+
+\section{Environmental Impact Discussion}
+
+The estimated carbon footprint of this thesis, $4.665\,\text{kg}\,\ac{CO2e}$. 
+The personal laptop accounts for approximately $83\%$ of the total electricity 
+consumption. The cell 
+recharging and instrument operation together account for less than $20\%$ of the 
+total footprint, reflecting the efficiency of the algebraic parameter 
+identification method used in this work (Section~\ref{Parameters}), which 
+requires substantially shorter tests, and therefore less instrument energy 
+consumption than conventional characterisation approaches requiring long 
+relaxation periods.
+
+
+\chapter{Social and Gender Equality Assessment}\label{sec:SocialGenderAssessment}
+
+\section{Access to the Technology}
+
+The battery state estimation framework developed in this thesis is not a product or service with differentiated 
+access. It does not discriminate between people of different gender identities or against vulnerable 
+groups. The algorithms, once published, are equally accessible to any engineer or 
+researcher regardless of gender. 
+
+The access to electric vehicle technology, of which battery management is a component, remains unevenly distributed 
+across socio-economic groups due to the current high cost of electric vehicles. This 
+is a systemic issue of the electric mobility sector.
+
+\section{Differentiated Impacts of the Research}
+
+The results of this thesis, \ac{SOC} and \ac{SOH} estimation 
+accuracy for a racing motorcycle battery, do not have any known differentiated 
+impact on any gender, either directly or indirectly.
+
+\section{Gender Distribution in Cited Sources}
+This section examines the gender distribution 
+among the authors of the works cited throughout this document, as a reflection of 
+representation within the research field.
+
+This analysis was performed by inferring the likely gender associated with each 
+author's given name. This method has clear limitations: it can misclassify 
+individuals whose name does not conventionally align with their gender identity 
+and many given names, particularly transliterated names common in East Asian 
+publications, do not carry a strong gender association for a non-native reader 
+and were therefore classified as ambiguous rather than guessed. Organisations, 
+standards bodies, and manufacturer datasheets cited without an individual named 
+author were excluded from this count, as were entries not ultimately used in this 
+thesis.
+
+Of the 51 individually named authors across the references cited in this thesis, 
+24 ($47.1\%$) were classified as having a male-associated given name, 4 ($7.8\%$) 
+as female-associated, and 23 ($45.1\%$) as ambiguous. Restricting the analysis to 
+only the 28 names with a reasonably inferable gender, $85.7\%$ are male-associated 
+and $14.3\%$ are female-associated.
+
+This reflects a 
+research field in which women remain a clear minority among identifiable authors, 
+independent of any specific choice made during the literature review process.
+
+\section{Relevant Sustainable Development Goals}
+
+This work contributes to the following \ac{SDG}:
+
+\begin{itemize}
+    \item \textbf{SDG 7 -- Affordable and Clean Energy}: accurate battery state 
+    estimation improves the efficiency and safe utilisation of \ac{Li-ion} 
+    battery capacity, supporting the broader adoption of electric mobility.
+    \item \textbf{SDG 9 -- Industry, Innovation and Infrastructure}: this work 
+    contributes methodological innovation in \ac{BMS} technology, an enabling 
+    infrastructure for electric vehicles.
+    \item \textbf{SDG 13 -- Climate Action}: by supporting the reliability and 
+    performance of electric vehicles, this work contributes indirectly to the 
+    decarbonisation of the transport sector, as discussed in the 
+    Preface.
+\end{itemize}

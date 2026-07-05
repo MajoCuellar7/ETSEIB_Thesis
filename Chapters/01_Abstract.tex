@@ -1,0 +1,143 @@
+\chapter*{Abstract}\label{sec:Abstract}
+ \addcontentsline{toc}{chapter}{Abstract}
+
+Electric racing motorcycles require accurate, real-time knowledge of the battery's 
+State of Charge (SOC) and State of Health (SOH) to guarantee safe and reliable 
+operation under the highly dynamic current profiles typical of a race. This work 
+develops and validates a model-based estimation framework for the simultaneous 
+estimation of SOC and SOH of the WeLion SHP270-30 Nickel-Manganese-Cobalt (NMC) 
+lithium-ion cell (30~Ah nominal capacity) used in the eRacing electric 
+motorcycle developed at ETSEIB.
+
+The battery was represented using a second-order Thévenin equivalent circuit model 
+(ECM), consisting of a voltage source, a series resistance, and 
+two parallel resistor--capacitor branches. The cell was first characterised 
+experimentally through discharge, charge, and pulse-discharge tests, from which the 
+actual capacity and the Open Circuit Voltage-SOC relationship were obtained. The 
+equivalent-circuit parameters were subsequently identified using an algebraic method, 
+applied to a two-level step-current test repeated across different 
+SOC operating points. Finally, two Extended Kalman Filters (EKF) were 
+implemented in MATLAB, a SOC filter, and a dual EKF that simultaneously estimates 
+SOC and the SOH parameters, the series resistance $R_0$ and the 
+capacity $Q$.
+
+Both filters were validated using experimental data from three current profiles: a 
+charge cycle, a cyclic pulse discharge, and a random step-current discharge simulating 
+race conditions. The SOC filter achieved root-mean-square errors (RMSE) between 
+$0.69\%$ and $1.14\%$ relative to a coulomb-counting reference, remaining within the 
+estimated $3\sigma$ uncertainty bounds throughout all tests. The dual EKF achieved 
+comparable SOC accuracy (RMSE between $0.94\%$ and $1.39\%$) while simultaneously 
+obtaining the capacity and resistance estimates to values consistent with the 
+characterised cell.
+
+The results confirm that a second-order Thévenin ECM combined with a dual EKF 
+provides a computationally efficient and sufficiently accurate framework for 
+real-time SOC and SOH estimation under the dynamic current profiles found in 
+motorsport applications. The algebraic parameter identification method proved 
+effective across most of the operating range, although reduced reliability was 
+observed at the extremes of the state of charge, consistent with the known numerical 
+sensitivity of the method and the limitations of the equivalent-circuit model in 
+capturing the underlying electrochemical behaviour in these regions. Future work 
+should extend the framework to account for temperature dependence and validate its 
+performance under real race data.
+
+\vspace{1em}
+\noindent\textbf{Keywords:} State of Charge, State of Health, Extended Kalman Filter, 
+Equivalent-Circuit Model, lithium-ion battery, battery characterisation.
+
+
+\chapter*{Resum}
+\addcontentsline{toc}{chapter}{Resum}
+Les motocicletes elèctriques de competició requereixen un coneixement precís i en 
+temps real de l'Estat de Càrrega (SOC) i l'Estat de Salut (SOH) de la bateria per 
+garantir un funcionament segur i fiable sota els perfils de corrent altament dinàmics 
+propis d'una cursa. Aquest treball desenvolupa i valida un marc d'estimació basat en un 
+model per a l'estimació simultània del SOC i el SOH de la cel·la de liti-ió WeLion 
+SHP270--30, de química Níquel-Manganès-Cobalt (NMC) i capacitat nominal de 30~Ah, 
+utilitzada a la motocicleta elèctrica eRacing desenvolupada a l'ETSEIB.
+
+La bateria es va representar mitjançant un model de circuit equivalent (ECM) de 
+Thévenin de segon ordre, format per una font de tensió, una resistència en sèrie i 
+dues branques paral·leles de resistència-condensador. La cel·la es va caracteritzar 
+experimentalment mitjançant assajos de descàrrega contínua, càrrega i descàrrega per polsos, 
+dels quals es van obtenir la capacitat real i la relació OCV--SOC. Posteriorment, els 
+paràmetres del circuit equivalent es van identificar mitjançant un mètode algebraic, 
+aplicat a un assaig d'esglaó de corrent de dos nivells, repetit en diferents punts 
+d'operació del SOC. Finalment, es van implementar dos Filtres de Kalman Estesos (EKF) 
+en MATLAB, un filtre de SOC, i un EKF dual que estima simultàniament el SOC i els 
+paràmetres del SOH, la resistència en sèrie $R_0$ i la capacitat $Q$.
+
+Ambdós filtres es van validar amb dades experimentals de tres perfils de corrent: un 
+cicle de càrrega, una descàrrega cíclica per polsos, i una descàrrega d'esglaons de 
+corrent aleatoris que simulen les condicions d'una cursa. El filtre de SOC va assolir 
+errors quadràtics mitjans (RMSE) d'entre el $0,69\%$ i l'$1,14\%$ respecte a una 
+referència de comptatge de coulombs, mantenint-se dins dels límits d'incertesa de 
+$3\sigma$ estimats en tots els assajos. L'EKF dual va assolir una precisió del SOC 
+comparable (RMSE d'entre el $0,94\%$ i l'$1,39\%$) mentre convergia simultàniament 
+les estimacions de capacitat i resistència a valors consistents amb la cel·la 
+caracteritzada.
+
+Els resultats confirmen que un ECM de Thévenin de segon ordre combinat amb un EKF dual 
+proporciona un marc computacionalment eficient i prou precís per l'estimació en 
+temps real del SOC i el SOH sota els perfils de corrent dinàmics propis de les 
+aplicacions d'automobilisme esportiu. El mètode algebraic d'identificació de 
+paràmetres es va mostrar efectiu en la major part del rang d'operació, tot i que es va 
+observar una fiabilitat reduïda als extrems de l'estat de càrrega, coherent amb la 
+sensibilitat numèrica coneguda del mètode i amb les limitacions del model de circuit 
+equivalent per capturar el comportament electroquímic subjacent en aquestes regions. 
+Els treballs futurs haurien d'ampliar el marc per tenir en compte la dependència de la 
+temperatura i validar-ne el rendiment amb dades reals de telemetria d'una cursa.
+
+\vspace{1em}
+\noindent\textbf{Paraules clau:} Estat de Càrrega, Estat de Salut, Filtre de Kalman 
+Estès, Model de Circuit Equivalent, bateria de liti-ió, caracterització de bateries.
+
+
+\chapter*{Resumen}
+\addcontentsline{toc}{chapter}{Resumen}
+Las motocicletas eléctricas de competencia requieren un conocimiento del Estado de Carga (SOC) preciso y en 
+tiempo real, así como el Estado de Salud (SOH) de la batería para poder 
+garantizar un funcionamiento seguro y confiable bajo perfiles dinámicos de corriente 
+correspondientes a los de una carrera. Este trabajo desarrolla y valida una metodología
+para la estimación simultánea del SOC y el SOH de la celda de litio-ion WeLion SHP270--30, de química 
+Níquel-Manganeso-Cobalto (NMC), con una capacidad nominal de $30 Ah$, 
+la cual es la correspondiente a la utilizada en la motocicleta eléctrica eRacing desarrollada 
+en ETSEIB.
+
+La batería se representó mediante un modelo de circuito equivalente (ECM) de Thévenin 
+de segundo orden, conformado por una fuente de voltaje, una resistencia en serie y dos 
+ramas con una resistencia y un capacitor en paralelo. La celda se caracterizó experimentalmente 
+mediante pruebas de descarga, carga y descarga por pulsos, de las cuales se obtuvieron 
+la capacidad real y la relación OCV--SOC. Posteriormente, los parámetros del circuito 
+equivalente se identificaron mediante un método algebraico, aplicado a una prueba 
+conformada por dos escalones de corriente y repetida en distintos puntos de operación del SOC. 
+Finalmente, se implementaron dos filtros de Kalman Extendidos (EKF) en MATLAB, un 
+filtro de SOC, y un dual EKF que estima simultáneamente el SOC y los parámetros del 
+SOH, siendo estos parámetros la resistencia en serie $R_0$ y la capacidad $Q$.
+
+Ambos filtros se validaron con datos experimentales obtenidos de tres perfiles de corriente: un 
+ciclo de carga, uno de descarga cíclica por pulsos, y uno de descarga de escalones de 
+corriente aleatorios que simulan las condiciones de una carrera. El filtro de SOC 
+alcanzó errores (RMSE) de entre $0.69\%$ y $1.14\%$ respecto a la 
+referencia de Coulomb Counting, manteniéndose dentro de los límites de incertidumbre 
+de $3\sigma$ estimados en todas las pruebas. El EKF dual alcanzó una precisión del SOC 
+comparable (RMSE de entre $0.94\%$ y $1.39\%$) mientras obtenía al mismo tiempo las 
+estimaciones de capacidad y resistencia a valores consistentes con la celda 
+caracterizada.
+
+Los resultados confirman que un \acs{ECM} de Thévenin de segundo orden combinado con un dual \acs{EKF} 
+proporciona un marco computacionalmente eficiente y suficientemente preciso para 
+la estimación en tiempo real del SOC y el SOH bajo perfiles de corriente dinámicos aproximadamente
+caracteristicos de las aplicaciones del automovilismo deportivo. El método algebraico de 
+identificación de parámetros demostró ser efectivo en la mayor parte del rango de 
+operación, aunque se observó una confiabilidad reducida en los extremos del estado de 
+carga, congruente con la sensibilidad numérica conocida del método y con las 
+limitaciones del modelo de circuito equivalente para capturar el comportamiento 
+electroquímico en estas regiones. Futuros trabajos deberían de ampliar el 
+marco para considerar la dependencia con la temperatura y validar su desempeño con 
+datos reales de telemetría de carrera.
+
+\vspace{1em}
+\noindent\textbf{Palabras clave:} Estado de Carga, Estado de Salud, Filtro de Kalman 
+Extendido, Modelo de Circuito Equivalente, batería de litio-ion, caracterización de 
+baterías.

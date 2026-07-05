@@ -1,0 +1,181 @@
+\chapter*{Introduction}\label{sec:introduction2}
+% here maybe talk about the actual requirements on the bms, like not only that it's essential to monitor but it's actually illegal(?)
+% not to.
+% Need to talk about SOC and SOH, prob explain what they are, (in the preface, i only mentioned them, not explained):
+% SOC represents the remaining usable capacity of the battery at any given moment — the electrical equivalent of a fuel gauge 
+% — and directly determines how much energy is available to the vehicle. SOH, on the other hand, reflects the long-term 
+% degradation of the battery relative to its original capacity, providing a measure of remaining useful life.
+% (de 2--3 paginas)
+% \\
+% Cual es el ambito de conocimiento general que se atañe? \\
+% Cual es la problematica en particular que se aborda?\\
+% Como se ha abordado esta problematica en la literatura? (breve)\\
+
+% Introducción \- de general a particular lo que se dice en el prefacio.\\
+% 	1. La movilidad es un descarbonizacion, implica cambiar la \\
+% 	2. La gestion correcta y en el funcionamiento en \\
+% 	3. La gestion de los vehiculos electricos, solo los trabajos cercanos, enfoques, mas tecnico\\
+% 	4. Lo que aporto\\
+
+
+High-performance electromobility relies heavily on Lithium-ion (\acs{Li-ion}) battery technology due to its superior energy-to-weight ratio, 
+low self-discharge rates, and high efficiency compared to other rechargeable technologies~\cite{Bosello2025}. 
+Nickel-Manganese-Cobalt (\acs{NMC}) is a type of \acs{Li-ion} battery. 
+\acs{NMC} cells are widely adopted for high-performance electric mobility applications 
+due to their high energy density~\cite{HassanTantaNMC}, which makes them suitable for motorsport applications since minimising
+the weight while maintaining high power capability is an essential design requirement.
+However, Lithium-ion cells require a robust system to ensure efficient operation within the Safe Operating Area;
+this embedded system is known as the Battery Management System (\acs{BMS}).
+\\
+The \acs{BMS} is a critical component in any electric vehicle employing \acs{Li-ion} batteries; its primary functions 
+include detecting unsafe operating states, protecting cells from unsafe conditions, extending battery longevity, and 
+ensuring that the battery pack operates within its design specifications~\cite{plett2015battery}. To achieve these objectives,
+the system continuously measures, balances, reports, records, and estimates a set of vital parameters.
+\\
+The importance of the \acs{BMS} is reflected in international standards such as ISO 26262, which defines requirements for vehicle
+functional safety~\cite{EVERLASTING_D6.7}. Failure to implement an effective \acs{BMS} can lead to various hazards,
+including inaccurate \acs{SOC} and \acs{SOH} estimation, which may result in overcharging, thermal runaway, and 
+accelerated cell degradation~\cite{EVERLASTING_D6.7}. Consequently, cell voltages, battery-pack current, and external cell temperatures 
+are continuously monitored and protection mechanisms are implemented when abusive operating conditions are detected. 
+These measurements
+are essential for detecting faults and deploying protocols against overcharge/discharge, overcurrent, short circuits,
+and extreme temperatures~\cite{plett2015battery}. Furthermore, these signals are input variables needed for state estimation algorithms, which
+are fundamental for optimising battery performance and predicting reliability.
+\\
+To optimise the use of a \acs{Li-ion} battery, an accurate assessment of the available energy and power at 
+any given moment is essential, as these metrics determine the achievable driving range and performance of an electric vehicle. 
+These parameters are closely related to the State of Charge (\acs{SOC}) and the State of Health (\acs{SOH}), which are
+two of the most important parameters managed by the \acs{BMS}.
+However, a fundamental limitation is that these states cannot be directly measured by physical sensors, instead, they must be 
+inferred~\cite{EKFEV}. 
+Consequently, the \acs{BMS} relies on estimation algorithms to calculate the \acs{SOC} and \acs{SOH} using external and 
+observable signals, such as voltage, current, and temperature~\cite{BatteryKalmanRaceCar}.
+\\
+This limitation represents a significant challenge in battery management, as the accuracy of these estimations impacts the system 
+efficiency, safety, and battery lifetime~\cite{UKFDynamPar}.~\acs{SOC} is defined as the percentage of the remaining capacity of a battery
+cell relative to its nominal capacity~\cite{EKFEV}. Accurately estimating this value 
+is difficult, as \acs{SOC} is related to the concentration of lithium in the negative electrode~\cite{plett2015battery} 
+and direct measurement is not possible. 
+\\
+As a result, State of Charge must be inferred from observable variables, while also being influenced
+by multiple factors including hysteresis effects, temperature, aging, and charge/discharge rates, efficiency, and 
+number of cycles~\cite{UKFDynamPar}.
+Furthermore, dynamic operating conditions in a motorsport context such as high and rapidly varying current loads and high 
+thermal variability further complicate the estimation process~\cite{plett2015battery}.
+% "These challenges are something something in the context of high-performance racing. 
+% In competitions, the motorcycle is subjected? to extreme current peaks and rapid thermal 
+% transients that render traditional, static estimation methods insufficient..."
+\\
+The State of Charge cannot be directly inferred from voltage measurements, as \acs{SOC} depends on particle average concentrations, 
+whereas voltage is related to surface concentrations, which are influenced by temperature. 
+In contrast, \acs{SOC} changes only as a result of current flowing through the battery, either during the charge 
+or discharge process~\cite{plett2015battery}.
+\\
+Different approaches have been proposed in the literature to estimate the State of Charge. One of the simplest to implement
+is Coulomb Counting, in which \acs{SOC} is computed by integrating the battery current over time. While this method is 
+straightforward to implement and demands low computational effort, it presents cumulative errors due to sensor inaccuracies, current
+assumptions, and lack of reliable initial state value~\cite{plett2015battery}. 
+An alternative approach is through a lookup table based on the relationship between open-circuit voltage (\acs{OCV}) and \acs{SOC}, 
+obtained by experimental characterisation under controlled conditions.
+Although this method can provide accurate results and is often integrated into more complex algorithms, it requires 
+long relaxation periods to measure the true \acs{OCV}, proving impractical for applications requiring real-time monitoring 
+or involving dynamic loads~\cite{SOCSOH}.
+\\
+More complex alternatives include Machine Learning and Deep Learning techniques. These methods do not require characterising
+the internal battery dynamics and can effectively handle the nonlinearities of the system. However, their performance
+relies heavily on the quality and availability of extensive training data~\cite{Bosello2025}.
+Model-based approaches, by contrast, improve estimation accuracy by incorporating battery dynamics explicitly, 
+accounting for sensor noise, and correcting estimates recursively using real-time measurements.
+\\
+These methods do not require large training datasets, making them suitable for applications where experimental 
+data is limited.
+Among these methods, Kalman filter-based algorithms, such as Kalman Filter (\acs{KF}), Extended Kalman Filter (\acs{EKF}), or
+Unscented Kalman Filter (\acs{UKF}), demonstrate competitive performance in the literature. 
+These algorithms use a mathematical model of the battery to propagate state estimates, while simultaneously computing the 
+uncertainty associated with those predictions through a covariance matrix~\cite{BatteryKalmanRaceCar}.
+\\
+Unlike data-driven techniques, model-based estimation methods require an explicit mathematical representation of the battery. 
+Consequently, the performance of Kalman filter algorithms depends strongly on the accuracy of the battery model. 
+The two main modelling approaches are physics-based electrochemical models and equivalent circuit models (\acsp{ECM}).
+\\
+Physics-based models describe the electrochemical processes occurring within the cell and can provide highly accurate 
+representations of battery behaviour. However, they require detailed knowledge of the cell chemistry and internal structure, 
+resulting in high computational complexity and implementation effort. In contrast, equivalent circuit models represent 
+the battery using electrical components such as voltage sources, resistors, and capacitors. Although these models provide a 
+simplified description of the battery dynamics, they offer a suitable trade-off between accuracy and computational efficiency, 
+making them particularly suitable for online battery management applications.
+\\
+Accurate \acs{SOH} estimation constitutes a significant challenge in battery management systems and is a fundamental 
+indicator of cell degradation, reflecting the declining performance capabilities of the 
+battery pack in its lifetime~\cite{plett2015battery}. 
+The two metrics most widely associated with battery health are the total capacity of the cell and the equivalent 
+series resistance (\acs{ESR}).
+\\
+Variations in these quantities are caused by unwanted chemical reactions and structural degradation.
+Specifically, anode aging predominantly drives the increase in the \acs{ESR}, whereas cathode degradation is associated with total capacity 
+reduction~\cite{plett2015battery}. Consequently, accurate \acs{SOH} estimation is essential for evaluating battery lifetime, reliability,
+and operational safety. A cell is commonly considered to have reached its end-of-life when its capacity reaches $80\%$ 
+of its nominal value, and is therefore replaced to ensure safe and reliable operation~\cite{SOHBook}.
+\\
+Similar to \acs{SOC}, the \acs{SOH} cannot be directly measured and therefore must be inferred from observable signals, such as current, voltage,
+temperature, and \acs{SOC} estimates. Nonlinear Kalman filters and machine learning techniques are commonly used for \acs{SOH} estimation. 
+However, in the literature, \acs{SOH} estimation methods are frequently integrated with \acs{SOC} estimation frameworks 
+through joint or dual estimation approaches combined with Extended Kalman or Sigma-Point Kalman filters. 
+The joint estimation approach employs an augmented state vector to simultaneously estimate \acs{SOC} and \acs{SOH}, 
+whereas the dual estimation approach uses separate nonlinear filters operating in parallel~\cite{plett2015battery}.
+\\
+This work proposes a model-based \acs{SOC} and \acs{SOH} estimation framework for the Nickel-Manganese-Cobalt cell used in the eRacing 
+electric motorcycle at ETSEIB. A second-order RC equivalent circuit model is parameterised through experimental 
+characterisation of the WeLion SHP270-30 cell~\cite{welion2026shp270}. A dual Estimation framework using
+the Extended Kalman Filter is implemented and validated using real charge-discharge data.
+
+%  against real charge-discharge data representative of competition conditions. Additionally, algorithmic 
+%  extensions are explored to further improve estimation accuracy and robustness.
+
+
+% \section{The Preamble}\label{sec:preamble}
+% The preamble of the \LaTeX\! template defines the font size, page layout, language, report type, title, and author(s) of the report. The preamble of the current template is shown below. It should be more or less clear how you need to modify the preamble to fit your needs; if not, consult your supervisor.
+% %\lstset{language=TeX,numbers=none}
+% %\begin{lstlisting}[frame=lines]
+% \begin{verbatim}
+%  \documentclass[10pt,twoside,a4paper,fleqn]{report}
+
+%  \usepackage[german,st]{ethidsc}             % IDSC style
+%                                              % {german}/english: language
+%                                              % {st}/bt/mt: thesis type
+
+%  % Page header (don't change)
+%  \setlength{\parindent}{0em}                 % Disable parindent
+%  \rhead[\nouppercase{\rightmark}]{\thepage}  % Special headings
+%  \lhead[\thepage]{\nouppercase{\leftmark}}   % Special headings
+%  \cfoot{}                                    % Special headings
+
+%  % Title page (please fill in)
+%  \title{\LaTeX\ Thesis Template v.1.4}       % Report title
+
+%  \studentA{Hans Muster}
+%  \ethidA{97-906-739}
+%  \semesterA{5}
+%  \emailA{muster@student.ethz.ch}
+
+%  % \studentB{Second Student}
+%  % \ethidB{12-345-678}
+%  % \semesterB{9}
+%  % \emailB{second@student.ethz.ch}
+
+%  \supervision{First Supervisor\\ Prof. Dr. Second Supervisor}
+%  \date{March 2011}
+
+%  \identification{IDSC-XX-YY-ZZ}              % Project identifier
+
+%  \infopage
+%  \declaration
+%  \end{verbatim}
+% %\end{lstlisting}
+
+% The style \texttt{ethidsc.sty} enforces certain changes to the original \texttt{report} class, e.g., the title page. The style accepts two options. The first option lets you choose the language of your report, i.e., the language of the title page, headings, info-page, etc. Valid options are: \texttt{german} (default) and \texttt{english}. The second option defines the type of report which will be printed on the title and info page. Valid options are: \texttt{st} (default), \texttt{bt}, and \texttt{mt} for semester, bachelor and master thesis, respectively. For instance, if you will be writing a master thesis in English, use
+% \begin{verbatim}
+%  \usepackage[english,mt]{ethidsc}
+% \end{verbatim}
+% The command \texttt{\textbackslash infopage} prints an information page at the end of the document which you must sign before handing in the report.
+

@@ -1,0 +1,233 @@
+note: Running TeX ...
+warning: systeme.tex:78: Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+warning: systeme.tex:78: Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+warning: systeme.tex:78: Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+warning: systeme.tex:78: Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+warning: systeme.tex:82: Invalid UTF-8 byte or sequence at line 82 replaced by U+FFFD.
+warning: systeme.tex:86: Invalid UTF-8 byte or sequence at line 86 replaced by U+FFFD.
+warning: systeme.tex:86: Invalid UTF-8 byte or sequence at line 86 replaced by U+FFFD.
+warning: systeme.tex:86: Invalid UTF-8 byte or sequence at line 86 replaced by U+FFFD.
+warning: systeme.tex:88: Invalid UTF-8 byte or sequence at line 88 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:96: Invalid UTF-8 byte or sequence at line 96 replaced by U+FFFD.
+warning: systeme.tex:96: Invalid UTF-8 byte or sequence at line 96 replaced by U+FFFD.
+warning: systeme.tex:114: Invalid UTF-8 byte or sequence at line 114 replaced by U+FFFD.
+warning: systeme.tex:114: Invalid UTF-8 byte or sequence at line 114 replaced by U+FFFD.
+warning: systeme.tex:114: Invalid UTF-8 byte or sequence at line 114 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:129: Invalid UTF-8 byte or sequence at line 129 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:181: Invalid UTF-8 byte or sequence at line 181 replaced by U+FFFD.
+warning: systeme.tex:181: Invalid UTF-8 byte or sequence at line 181 replaced by U+FFFD.
+warning: systeme.tex:182: Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+warning: systeme.tex:187: Invalid UTF-8 byte or sequence at line 187 replaced by U+FFFD.
+warning: systeme.tex:193: Invalid UTF-8 byte or sequence at line 193 replaced by U+FFFD.
+warning: systeme.tex:193: Invalid UTF-8 byte or sequence at line 193 replaced by U+FFFD.
+warning: systeme.tex:197: Invalid UTF-8 byte or sequence at line 197 replaced by U+FFFD.
+warning: systeme.tex:199: Invalid UTF-8 byte or sequence at line 199 replaced by U+FFFD.
+warning: systeme.tex:199: Invalid UTF-8 byte or sequence at line 199 replaced by U+FFFD.
+warning: systeme.tex:199: Invalid UTF-8 byte or sequence at line 199 replaced by U+FFFD.
+warning: systeme.tex:207: Invalid UTF-8 byte or sequence at line 207 replaced by U+FFFD.
+warning: systeme.tex:207: Invalid UTF-8 byte or sequence at line 207 replaced by U+FFFD.
+warning: systeme.tex:209: Invalid UTF-8 byte or sequence at line 209 replaced by U+FFFD.
+warning: systeme.tex:217: Invalid UTF-8 byte or sequence at line 217 replaced by U+FFFD.
+warning: systeme.tex:240: Invalid UTF-8 byte or sequence at line 240 replaced by U+FFFD.
+warning: systeme.tex:242: Invalid UTF-8 byte or sequence at line 242 replaced by U+FFFD.
+warning: systeme.tex:244: Invalid UTF-8 byte or sequence at line 244 replaced by U+FFFD.
+warning: systeme.tex:245: Invalid UTF-8 byte or sequence at line 245 replaced by U+FFFD.
+warning: systeme.tex:255: Invalid UTF-8 byte or sequence at line 255 replaced by U+FFFD.
+warning: systeme.tex:255: Invalid UTF-8 byte or sequence at line 255 replaced by U+FFFD.
+warning: systeme.tex:255: Invalid UTF-8 byte or sequence at line 255 replaced by U+FFFD.
+warning: systeme.tex:255: Invalid UTF-8 byte or sequence at line 255 replaced by U+FFFD.
+warning: systeme.tex:259: Invalid UTF-8 byte or sequence at line 259 replaced by U+FFFD.
+warning: systeme.tex:267: Invalid UTF-8 byte or sequence at line 267 replaced by U+FFFD.
+warning: systeme.tex:267: Invalid UTF-8 byte or sequence at line 267 replaced by U+FFFD.
+warning: systeme.tex:269: Invalid UTF-8 byte or sequence at line 269 replaced by U+FFFD.
+warning: systeme.tex:274: Invalid UTF-8 byte or sequence at line 274 replaced by U+FFFD.
+warning: systeme.tex:285: Invalid UTF-8 byte or sequence at line 285 replaced by U+FFFD.
+warning: systeme.tex:302: Invalid UTF-8 byte or sequence at line 302 replaced by U+FFFD.
+warning: systeme.tex:303: Invalid UTF-8 byte or sequence at line 303 replaced by U+FFFD.
+warning: systeme.tex:303: Invalid UTF-8 byte or sequence at line 303 replaced by U+FFFD.
+warning: systeme.tex:318: Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+warning: systeme.tex:318: Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+warning: systeme.tex:318: Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+warning: systeme.tex:318: Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+warning: systeme.tex:332: Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+warning: systeme.tex:332: Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+warning: systeme.tex:332: Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+warning: systeme.tex:338: Invalid UTF-8 byte or sequence at line 338 replaced by U+FFFD.
+warning: systeme.tex:338: Invalid UTF-8 byte or sequence at line 338 replaced by U+FFFD.
+warning: systeme.tex:353: Invalid UTF-8 byte or sequence at line 353 replaced by U+FFFD.
+warning: systeme.tex:385: Invalid UTF-8 byte or sequence at line 385 replaced by U+FFFD.
+warning: systeme.tex:404: Invalid UTF-8 byte or sequence at line 404 replaced by U+FFFD.
+warning: systeme.tex:407: Invalid UTF-8 byte or sequence at line 407 replaced by U+FFFD.
+warning: systeme.tex:452: Invalid UTF-8 byte or sequence at line 452 replaced by U+FFFD.
+warning: systeme.tex:457: Invalid UTF-8 byte or sequence at line 457 replaced by U+FFFD.
+warning: systeme.tex:514: Invalid UTF-8 byte or sequence at line 514 replaced by U+FFFD.
+warning: systeme.tex:572: Invalid UTF-8 byte or sequence at line 572 replaced by U+FFFD.
+warning: systeme.tex:573: Invalid UTF-8 byte or sequence at line 573 replaced by U+FFFD.
+warning: systeme.tex:592: Invalid UTF-8 byte or sequence at line 592 replaced by U+FFFD.
+warning: systeme.tex:595: Invalid UTF-8 byte or sequence at line 595 replaced by U+FFFD.
+warning: systeme.tex:598: Invalid UTF-8 byte or sequence at line 598 replaced by U+FFFD.
+warning: systeme.tex:621: Invalid UTF-8 byte or sequence at line 621 replaced by U+FFFD.
+warning: systeme.tex:626: Invalid UTF-8 byte or sequence at line 626 replaced by U+FFFD.
+warning: systeme.tex:630: Invalid UTF-8 byte or sequence at line 630 replaced by U+FFFD.
+warning: systeme.tex:638: Invalid UTF-8 byte or sequence at line 638 replaced by U+FFFD.
+warning: systeme.tex:642: Invalid UTF-8 byte or sequence at line 642 replaced by U+FFFD.
+warning: systeme.tex:646: Invalid UTF-8 byte or sequence at line 646 replaced by U+FFFD.
+warning: systeme.tex:648: Invalid UTF-8 byte or sequence at line 648 replaced by U+FFFD.
+warning: systeme.tex:648: Invalid UTF-8 byte or sequence at line 648 replaced by U+FFFD.
+warning: systeme.tex:654: Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
+warning: systeme.tex:654: Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
+warning: commath.sty:6: 
+Invalid UTF-8 byte or sequence at line 6 replaced by U+FFFD.
+warning: commath.sty:9: Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
+error: PlantillaTFG.tex:120: Undefined control sequence
+note: downloading ec-qplr-sc.tfm
+note: downloading ec-qplri.tfm
+note: downloading t1lmtt.fd
+note: downloading ec-lmtt10.tfm
+note: downloading ec-lmtti10.tfm
+note: Rerunning TeX because "PlantillaTFG.aux" changed ...
+warning: systeme.tex:78: Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+warning: systeme.tex:78: Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+warning: systeme.tex:78: Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+warning: systeme.tex:78: Invalid UTF-8 byte or sequence at line 78 replaced by U+FFFD.
+warning: systeme.tex:82: Invalid UTF-8 byte or sequence at line 82 replaced by U+FFFD.
+warning: systeme.tex:86: Invalid UTF-8 byte or sequence at line 86 replaced by U+FFFD.
+warning: systeme.tex:86: Invalid UTF-8 byte or sequence at line 86 replaced by U+FFFD.
+warning: systeme.tex:86: Invalid UTF-8 byte or sequence at line 86 replaced by U+FFFD.
+warning: systeme.tex:88: Invalid UTF-8 byte or sequence at line 88 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:90: Invalid UTF-8 byte or sequence at line 90 replaced by U+FFFD.
+warning: systeme.tex:96: Invalid UTF-8 byte or sequence at line 96 replaced by U+FFFD.
+warning: systeme.tex:96: Invalid UTF-8 byte or sequence at line 96 replaced by U+FFFD.
+warning: systeme.tex:114: Invalid UTF-8 byte or sequence at line 114 replaced by U+FFFD.
+warning: systeme.tex:114: Invalid UTF-8 byte or sequence at line 114 replaced by U+FFFD.
+warning: systeme.tex:114: Invalid UTF-8 byte or sequence at line 114 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:115: Invalid UTF-8 byte or sequence at line 115 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:118: Invalid UTF-8 byte or sequence at line 118 replaced by U+FFFD.
+warning: systeme.tex:129: Invalid UTF-8 byte or sequence at line 129 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:146: Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+warning: systeme.tex:181: Invalid UTF-8 byte or sequence at line 181 replaced by U+FFFD.
+warning: systeme.tex:181: Invalid UTF-8 byte or sequence at line 181 replaced by U+FFFD.
+warning: systeme.tex:182: Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+warning: systeme.tex:187: Invalid UTF-8 byte or sequence at line 187 replaced by U+FFFD.
+warning: systeme.tex:193: Invalid UTF-8 byte or sequence at line 193 replaced by U+FFFD.
+warning: systeme.tex:193: Invalid UTF-8 byte or sequence at line 193 replaced by U+FFFD.
+warning: systeme.tex:197: Invalid UTF-8 byte or sequence at line 197 replaced by U+FFFD.
+warning: systeme.tex:199: Invalid UTF-8 byte or sequence at line 199 replaced by U+FFFD.
+warning: systeme.tex:199: Invalid UTF-8 byte or sequence at line 199 replaced by U+FFFD.
+warning: systeme.tex:199: Invalid UTF-8 byte or sequence at line 199 replaced by U+FFFD.
+warning: systeme.tex:207: Invalid UTF-8 byte or sequence at line 207 replaced by U+FFFD.
+warning: systeme.tex:207: Invalid UTF-8 byte or sequence at line 207 replaced by U+FFFD.
+warning: systeme.tex:209: Invalid UTF-8 byte or sequence at line 209 replaced by U+FFFD.
+warning: systeme.tex:217: Invalid UTF-8 byte or sequence at line 217 replaced by U+FFFD.
+warning: systeme.tex:240: Invalid UTF-8 byte or sequence at line 240 replaced by U+FFFD.
+warning: systeme.tex:242: Invalid UTF-8 byte or sequence at line 242 replaced by U+FFFD.
+warning: systeme.tex:244: Invalid UTF-8 byte or sequence at line 244 replaced by U+FFFD.
+warning: systeme.tex:245: Invalid UTF-8 byte or sequence at line 245 replaced by U+FFFD.
+warning: systeme.tex:255: Invalid UTF-8 byte or sequence at line 255 replaced by U+FFFD.
+warning: systeme.tex:255: Invalid UTF-8 byte or sequence at line 255 replaced by U+FFFD.
+warning: systeme.tex:255: Invalid UTF-8 byte or sequence at line 255 replaced by U+FFFD.
+warning: systeme.tex:255: Invalid UTF-8 byte or sequence at line 255 replaced by U+FFFD.
+warning: systeme.tex:259: Invalid UTF-8 byte or sequence at line 259 replaced by U+FFFD.
+warning: systeme.tex:267: Invalid UTF-8 byte or sequence at line 267 replaced by U+FFFD.
+warning: systeme.tex:267: Invalid UTF-8 byte or sequence at line 267 replaced by U+FFFD.
+warning: systeme.tex:269: Invalid UTF-8 byte or sequence at line 269 replaced by U+FFFD.
+warning: systeme.tex:274: Invalid UTF-8 byte or sequence at line 274 replaced by U+FFFD.
+warning: systeme.tex:285: Invalid UTF-8 byte or sequence at line 285 replaced by U+FFFD.
+warning: systeme.tex:302: Invalid UTF-8 byte or sequence at line 302 replaced by U+FFFD.
+warning: systeme.tex:303: Invalid UTF-8 byte or sequence at line 303 replaced by U+FFFD.
+warning: systeme.tex:303: Invalid UTF-8 byte or sequence at line 303 replaced by U+FFFD.
+warning: systeme.tex:318: Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+warning: systeme.tex:318: Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+warning: systeme.tex:318: Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+warning: systeme.tex:318: Invalid UTF-8 byte or sequence at line 318 replaced by U+FFFD.
+warning: systeme.tex:332: Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+warning: systeme.tex:332: Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+warning: systeme.tex:332: Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+warning: systeme.tex:338: Invalid UTF-8 byte or sequence at line 338 replaced by U+FFFD.
+warning: systeme.tex:338: Invalid UTF-8 byte or sequence at line 338 replaced by U+FFFD.
+warning: systeme.tex:353: Invalid UTF-8 byte or sequence at line 353 replaced by U+FFFD.
+warning: systeme.tex:385: Invalid UTF-8 byte or sequence at line 385 replaced by U+FFFD.
+warning: systeme.tex:404: Invalid UTF-8 byte or sequence at line 404 replaced by U+FFFD.
+warning: systeme.tex:407: Invalid UTF-8 byte or sequence at line 407 replaced by U+FFFD.
+warning: systeme.tex:452: Invalid UTF-8 byte or sequence at line 452 replaced by U+FFFD.
+warning: systeme.tex:457: Invalid UTF-8 byte or sequence at line 457 replaced by U+FFFD.
+warning: systeme.tex:514: Invalid UTF-8 byte or sequence at line 514 replaced by U+FFFD.
+warning: systeme.tex:572: Invalid UTF-8 byte or sequence at line 572 replaced by U+FFFD.
+warning: systeme.tex:573: Invalid UTF-8 byte or sequence at line 573 replaced by U+FFFD.
+warning: systeme.tex:592: Invalid UTF-8 byte or sequence at line 592 replaced by U+FFFD.
+warning: systeme.tex:595: Invalid UTF-8 byte or sequence at line 595 replaced by U+FFFD.
+warning: systeme.tex:598: Invalid UTF-8 byte or sequence at line 598 replaced by U+FFFD.
+warning: systeme.tex:621: Invalid UTF-8 byte or sequence at line 621 replaced by U+FFFD.
+warning: systeme.tex:626: Invalid UTF-8 byte or sequence at line 626 replaced by U+FFFD.
+warning: systeme.tex:630: Invalid UTF-8 byte or sequence at line 630 replaced by U+FFFD.
+warning: systeme.tex:638: Invalid UTF-8 byte or sequence at line 638 replaced by U+FFFD.
+warning: systeme.tex:642: Invalid UTF-8 byte or sequence at line 642 replaced by U+FFFD.
+warning: systeme.tex:646: Invalid UTF-8 byte or sequence at line 646 replaced by U+FFFD.
+warning: systeme.tex:648: Invalid UTF-8 byte or sequence at line 648 replaced by U+FFFD.
+warning: systeme.tex:648: Invalid UTF-8 byte or sequence at line 648 replaced by U+FFFD.
+warning: systeme.tex:654: Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
+warning: systeme.tex:654: Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
+warning: commath.sty:6: 
+Invalid UTF-8 byte or sequence at line 6 replaced by U+FFFD.
+warning: commath.sty:9: Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
+error: PlantillaTFG.tex:120: Undefined control sequence
+warning: errors were issued by the TeX engine, but were ignored; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: downloading pdftex.map
+note: downloading kanjix.map
+note: downloading ckx.map
+note: downloading texglyphlist.txt
+note: downloading pdfglyphlist.txt
+note: downloading glyphlist.txt
+note: downloading q-ec.enc
+note: downloading qplr.pfb
+note: downloading qplb.pfb
+warning: Object @page.1 already defined.
+warning: Object @page.2 already defined.
+note: downloading q-ec-sc.enc
+note: downloading qplri.pfb
+note: downloading lm-ec.enc
+note: downloading lmtt10.pfb
+note: downloading lmtti10.pfb
+note: Writing `PlantillaTFG.pdf` (100.9794921875 KiB)
+note: Skipped writing 4 intermediate files (use --keep-intermediates to keep them)

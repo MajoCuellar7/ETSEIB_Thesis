@@ -1,0 +1,138 @@
+\chapter{State Of Art}\label{sec:StateofArt}
+
+The accurate estimation of battery internal states is an active research area driven by the growing 
+adoption of electric vehicles, energy storage systems, and innovation in lithium-ion batteries. The literature
+can be divided intro three approaches: the empirical, model-based and data-driven methods, each approach
+differs in accuracy, computational cost, and implementation complexity~\cite{SOHBook}. While reviewing estimation approaches,
+it is necessary to also consider the battery models used to describe the battery's dynamics.
+
+\subsection{Empirical Estimation Methods}
+
+One of the simplest models for \acs{SOC} estimation is the Coulomb Counting (\acs{CC}), also known as Ampere-hour integration method.
+This is an open-loop approach that computes the State of Charge by integrating the measured cell current over time. 
+The advantages of this method rely on its simple implementation and low computational demand~\cite{BatteryKalmanRaceCar}, 
+nonetheless, its performance is highly dependent on the initial \acs{SOC} characterisation, furthermore \acs{CC} is susceptible 
+to sensor inaccuracies and accumulated integration errors~\cite{EKFEV}\cite{SOCSOH}. 
+\\
+\\
+A complementary approach to \acs{CC} is the Open-Circuit Voltage (\acs{OCV}) method, which applies the relationship between \acs{OCV} and \acs{SOC}
+to infer the battery state from a voltage measurement. This \acs{OCV}-\acs{SOC} curve is commonly characterised experimentally and 
+stored as a lookup table~\cite{SOHBook}. Despite its simplicity and applicability across different battery chemistries, 
+the \acs{OCV}-\acs{SOC} relationship only holds accurately when the cell is fully relaxed and undisturbed for several hours p
+rior to measurement. This condition can only be achieved under controlled laboratory conditions, making the method unsuitable 
+for applications involving dynamic loads~\cite{plett2015battery}.
+As a result, both the \acs{CC} and \acs{OCV} are typically integrated into more complex estimation methods than used independently.
+
+\subsection{Battery Modelling Approaches}\label{SoABatteryModels}
+
+To review model-based estimation techniques, different types of battery models need to be considered first, 
+as the choice of model conditions the achievable accuracy and the feasibility of the implementation.
+\\
+\\
+In the literature there are two different methods to model a battery, the Physics-based models (\acs{PBM}) and the Equivalent 
+Circuit models (\acs{ECM})~\cite{plett2015battery}.~\acsp{PBM} capture the internal dynamics of a battery cell by constructing the 
+equations from electrochemical and thermodynamic laws, which describe the physical transport and diffusion and 
+electrochemical processes occurring in the cell. This type of model offers high predictive accuracy across a wide 
+range of operating conditions and insights into the internal electrochemical states, useful for predicting ageing. 
+However, the mathematical complexity involves coupled partial differential equations and demands high computational
+effort, which results in high costs and multiple challenges to implement on an embedded \acs{BMS}~\cite{plett2015battery}.
+\\
+\\
+\acsp{ECM} represent the battery cell as an electric circuit composed of resistors, capacitors, and an ideal voltage source, providing
+an approximate behaviour of the current-voltage dynamics. Its accuracy is generally lower than that of physics-based models, 
+and its predictive validity is restricted to the specific operational conditions in which it was characterised~\cite{plett2015battery}
+~\cite{SOHBook}.
+However, its simple structure, parameterisation process, and suitability to implement in real applications offer significant 
+practical advantages. Although the parameterisation process demands systematic and methodical laboratory testing, 
+the model's low mathematical complexity makes it more feasible to implement in comparison to \acsp{PBM}.
+The parameter values of an \acs{ECM} depend on operating conditions such as temperature, C-rate, depth of discharge, 
+and ageing status, which must be accounted for in the model structure~\cite{DEVARAKONDA2014}. Among \acs{ECM} variants, the second-order 
+Thévenin model has emerged as the standard choice in the literature. This circuit comprises of an \acs{OCV} source in series with a 
+resistor connected in series with two parallel branches, each with a capacitor and a resistor. 
+This model captures both electrochemical polarisation and concentration polarisation dynamics while 
+remaining computationally advantageous for \acs{BMS} applications~\cite{BatteryKalmanRaceCar}\cite{EKFEV}\cite{SOCSOH}.
+
+\subsection{Adaptive and Fuzzy Logic Methods for Estimation}
+
+To improve on fixed-parameter limitations of the standard model-based estimators, works have proposed adaptive strategies
+that update model parameters. The main challenge is the online parameter identification, traditional offline methods based on least-squares 
+curve fitting introduce accuracy limitations, while standard online approaches such as the Recursive Least Squares (\acs{RLS}) 
+algorithm suffer from data saturation and sensitivity to initial value settings, making it difficult 
+to reliably track time-varying parameters~\cite{Wang2025LithiumIonBS}.
+Zhang et al.~\cite{UKFDynamPar} demonstrated that by incorporating dynamic, \acs{SOC}-dependent parameters identified through limited-memory 
+recursive least-squares algorithm, the results show a more representative model of the actual battery discharge behaviour, with
+the resulting \acs{UKF}-based \acs{SOC} estimates closely matching those obtained via the ampere-hour method used as a reference benchmark.
+\\
+\\
+A further extension of model-based estimation involves the integration of fuzzy logic to dynamically adjust 
+filter parameters during operation. Wang et al.~\cite{Wang2025LithiumIonBS} proposed combining the 
+Multiple Innovation Least Squares (\acs{MILS}) algorithm for online parameter 
+identification with a fuzzy-logic mechanism that continuously adapts the observation noise covariance matrix of an \acs{EKF}. 
+The \acs{MILS} algorithm proves to enhance the data efficiency and convergence speed while the fuzzy-logic optimises the balance
+between the time update and measurement correction of the filter to improve higher precision under the coupled and dynamic conditions 
+of an electric vehicle. This type of hybrid methods represents a more complex implementation, but addresses some of 
+the robustness limitations of the Kalman filter approaches.
+
+\subsection{Data-Driven and Machine-Learning Models}
+
+Growing interest in data-driven methods has risen as an alternative to model-based approaches, due to their effectiveness in handling
+nonlinearities without requiring characterising the internal battery dynamics. These methods require experimental data
+when training to learn the input/output relationship~\cite{SOHBook}. Neural-Network estimators, such as the backpropagation (\acs{BP})
+have been applied to \acs{SOC} across different battery chemistries and operating conditions~\cite{SOCLowSpeedNeuralNetwork}.
+Xu et al. demonstrated that for low-speed electric vehicle batteries, \acs{BP} neural networks that have
+sufficiently deep network topologies can achieve suitable \acs{SOC} prediction accuracy during charging cycles, with the understanding that
+results are sensitive to the network architecture and the size and diversity of the training dataset~\cite{SOCLowSpeedNeuralNetwork}.
+\\
+\\
+In Bosello's work~\cite{Bosello2025} different deep learning approaches are provided for \acs{Li-ion} battery state estimation, 
+demonstrating the competitive accuracy across a range of conditions. Nonetheless, the consistent limitation in all data-driven 
+methods is their dependency on large and high quality training datasets that must represent the operating conditions faced~\cite{EKFEV}
+~\cite{Bosello2025}. Consequently, for applications where training data for the specific cell under its operating conditions is
+insufficient, model-based approaches are more practical.
+
+\subsection{Kalman Filter Methods for \acs{SOC} and \acs{SOH} Estimation}
+
+Kalman filter algorithms have demonstrated consistency, feasibility, and cost-effective performance as battery estimators~\cite{EKFEV}.
+The Linear Kalman Filter is optimal for linear systems with Gaussian noise but cannot directly accommodate the nonlinearities of 
+a lithium-ion \acs{OCV}/\acs{SOC} relationship~\cite{SOCSOH}. The Extended Kalman Filter addresses this by linearising the nonlinear model at each
+time step through a first-order Taylor expansion, followed by the standard recursive Kalman filter~\cite{plett2015battery}.
+\\
+\\
+Luo et al.~implemented an \acs{EKF} combined with a second-order RC \acs{ECM} for \acs{Li-ion} batteries on an electric vehicle, validating the algorithm
+under different current profiles: under constant current discharge with a maximum estimation error of $0.9\%$, under constant pulse and 
+periodic variable current discharges where the error stayed within $1.2\%$ and $1.8\%$ respectively, and under rapidly varying current
+discharge, obtaining an error of $3.4\%$~\cite{EKFEV}. Gjengedal et al.~applied a comparable \acs{EKF} approach to a Formula Student 
+electric race car, using lithium-polymer cells which were subjected to high and rapidly varying current profiles. 
+Their implementation achieved a \acs{SOC} estimation error below $0.66\%$, proving that Kalman filter estimators
+are a suitable option for motorsport applications~\cite{BatteryKalmanRaceCar}.
+\\
+\\
+The Sigma-Point or Unscented Kalman Filter (\acs{UKF}) avoids the approximation error introduced by the \acs{EKF}'s linearisation 
+step by performing a statistical linearisation at each time step rather than computing Jacobians~\cite{plett2015battery}. 
+It is concluded that the \acs{UKF} avoids the linearisation error inherent to the \acs{EKF} and achieves higher estimation precision, at 
+the cost of increased computational complexity.
+\\
+\\
+For simultaneous estimation of the \acs{SOC} and \acs{SOH} parameters, the joint and dual estimation techniques have been developed.
+Liu et al.~have proposed a joint online \acs{SOC} and \acs{SOH} estimation method using a Dual \acs{EKF}, in which one filter estimates \acs{SOC} at a fast 
+sampling period of 1 second while a second filter estimates the \acs{SOH}-related parameters at 60-second intervals~\cite{SOCSOH}. 
+The method was tested using a second-order RC model of a ternary lithium cell under both constant current and random current 
+profiles, achieving \acs{SOC} and \acs{SOH} estimation accuracy that outperformed standalone \acs{EKF} and \acs{UKF} implementations.
+
+\subsection{Contribution}
+
+The reviewed literature demonstrates that an Extended Kalman Filter approach combined with a second-order RC 
+equivalent circuit model provides a validated and feasible method to estimate the State of Charge of a battery 
+under dynamic conditions. Incorporating \acs{UKF}, adaptive parameter identification, and dual \acs{SOC}/\acs{SOH} estimation have 
+further improved the accuracy and robustness of the estimation. 
+However, these adjustments have largely been studied in isolation from one another and from the specific demands of motorsport applications. 
+Gjengedal et al.~\cite{BatteryKalmanRaceCar} validated an \acs{EKF} \acs{SOC} estimator on a Lithium Polymer (\acs{Li-Po}) cell under race 
+current profiles, but 
+did not extend the framework to \acs{SOH} estimation. Similarly, Liu et al.~\cite{SOCSOH} demonstrated a Dual \acs{EKF} approach for 
+joint \acs{SOC} and \acs{SOH} estimation on a ternary lithium cell for stationary energy storage and not for a motorsport application.
+Furthermore, conventional parameter identification methods used across the reviewed studies require extended rest periods 
+between tests, a limitation that the algebraic method of Devarakonda et al.~\cite{DEVARAKONDA2014} is specifically designed to overcome.
+\\
+This work combines the experimental characterisation of the WeLion SHP270\-30 cell, efficient parameter identification 
+through the algebraic method, and a Dual \acs{EKF} approach for joint \acs{SOC} and \acs{SOH} estimation, intended for an eRacing 
+electric motorcycle running under dynamic operating conditions.

@@ -1,0 +1,78 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Abstract}{ii}{chapter*.2}%
+\contentsline {chapter}{Resum}{iii}{chapter*.3}%
+\contentsline {chapter}{Resumen}{v}{chapter*.4}%
+\contentsline {chapter}{Nomenclature}{xii}{chapter*.84}%
+\contentsline {chapter}{\numberline {1}State Of Art}{4}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}Empirical Estimation Methods}{4}{subsection.1.0.1}%
+\contentsline {subsection}{\numberline {1.0.2}Battery Modelling Approaches}{4}{subsection.1.0.2}%
+\contentsline {subsection}{\numberline {1.0.3}Adaptive and Fuzzy Logic Methods for Estimation}{5}{subsection.1.0.3}%
+\contentsline {subsection}{\numberline {1.0.4}Data-Driven and Machine-Learning Models}{6}{subsection.1.0.4}%
+\contentsline {subsection}{\numberline {1.0.5}Kalman Filter Methods for \acs {SOC} and \acs {SOH} Estimation}{6}{subsection.1.0.5}%
+\contentsline {subsection}{\numberline {1.0.6}Contribution}{7}{subsection.1.0.6}%
+\contentsline {chapter}{\numberline {2}Methodology}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Battery Model}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Racing Motorcycle Battery Model}{10}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}OCV-SOC Curve Characterisation}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Discharge Test}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Charge Test}{11}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Pulses Test}{13}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Parameter Identification}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Parameter Identification - Test Setup}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Test Steps}{15}{subsection.2.3.2}%
+\contentsline {subsubsection}{Step 1: Identification of $R_0$}{15}{subsection.2.3.2}%
+\contentsline {subsubsection}{Step 2: Obtaining time constants and initial condition combinations}{15}{equation.2.20}%
+\contentsline {subsubsection}{Step 3: Obtaining $R_1$, $R_2$, $C_1$, $C_2$ from the current step}{16}{equation.2.27}%
+\contentsline {subsubsection}{Step 4: Optimisation of the sampling interval}{16}{equation.2.31}%
+\contentsline {section}{\numberline {2.4}Kalman Filter}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Extended Kalman Filter}{18}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Dual Estimation Technique}{19}{section.2.5}%
+\contentsline {section}{\numberline {2.6}EKF Implementation}{20}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}EKF for SOC Estimation}{20}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}EKF for SOH Estimation}{22}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}EKF Dual Implementation for SOC and SOH Estimation}{25}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Recursive Algorithm}{25}{subsection.2.6.4}%
+\contentsline {chapter}{\numberline {3}Results}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\acs {OCV}-\acs {SOC} Curve Characterisation}{28}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Discharge Test}{28}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Charge Test}{30}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Pulses Test}{31}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Parameter Identification}{32}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}$R_0$, $R_1$, $R_2$, $C_1$, $C_2$ parameters}{32}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Extended Kalman Filter}{35}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Estimation of SOC with EKF}{35}{subsection.3.3.1}%
+\contentsline {paragraph}{Charge Test}{35}{subsection.3.3.1}%
+\contentsline {paragraph}{Pulses Test}{36}{figure.caption.171}%
+\contentsline {paragraph}{Random Steps Test}{37}{figure.caption.173}%
+\contentsline {subsection}{\numberline {3.3.2}Estimation of \acs {SOC} and \acs {SOH} with Dual \acs {EKF}}{38}{subsection.3.3.2}%
+\contentsline {paragraph}{Charge Test}{39}{subsection.3.3.2}%
+\contentsline {paragraph}{Pulses Test}{40}{figure.caption.179}%
+\contentsline {paragraph}{Random Steps Test}{42}{figure.caption.183}%
+\contentsline {subsection}{\numberline {3.3.3}Estimation Comparison between \acs {SOC} \& \acs {SOH} EKF and \acs {SOC} filter}{44}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Planning}{48}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Economic Assessment}{50}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Labour Cost}{50}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Operational Expenses}{50}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Experimental Materials}{51}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Software Licensing}{51}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Total Cost}{51}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Economic Assessment Discussion}{52}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Environmental Assessment}{53}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Electricity Consumption}{53}{section.6.1}%
+\contentsline {paragraph}{Cell recharging.}{53}{section.6.1}%
+\contentsline {paragraph}{Laboratory instruments.}{53}{equation.6.1}%
+\contentsline {paragraph}{Personal computer.}{54}{table.caption.201}%
+\contentsline {section}{\numberline {6.2}Greenhouse Gas Emissions}{54}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Environmental Impact Discussion}{54}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Social and Gender Equality Assessment}{55}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Access to the Technology}{55}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Differentiated Impacts of the Research}{55}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Gender Distribution in Cited Sources}{55}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Relevant Sustainable Development Goals}{56}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Conclusion}{57}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Battery Characterisation}{57}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Parameter Identification}{57}{section.8.2}%
+\contentsline {section}{\numberline {8.3}SOC Estimation with EKF}{58}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Simultaneous SOC and SOH Estimation with Dual EKF}{58}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Limitations and Future Work}{59}{section.8.5}%

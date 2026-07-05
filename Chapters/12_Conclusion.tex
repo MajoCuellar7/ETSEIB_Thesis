@@ -1,0 +1,161 @@
+\chapter{Conclusion}\label{sec:Conclusion}
+
+This work developed and validated a model-based dual estimation framework for the simultaneous 
+estimation of the \ac{SOC} and \ac{SOH} of the WeLion SHP270-30 \ac{NMC} cell used in the eRacing 
+electric motorcycle at ETSEIB. The framework combines experimental cell characterisation, 
+algebraic parameter identification, and dual \ac{EKF} implementation in MATLAB. 
+The following sections present the conclusions from each stage of the work.
+
+\section{Battery Characterisation}
+
+The discharge test confirmed an actual cell capacity of $27.616 \text{Ah}$, approximately $8\%$ below 
+the nominal rating of $30 \text{Ah}$. This difference is consistent with typical behaviour in 
+practice, where the rated nominal capacity represents an ideal cell. Factors during the discharge test 
+such as the selected maximum and minimum voltage, conservative test conditions and ageing contributed to this difference.
+
+The charge test confirmed the expected \ac{CC-CV} behaviour of the \ac{Li-ion} battery and established 
+an energy efficiency of $91.5\%$, consistent with values reported for \ac{Li-ion} cells in 
+the literature~\cite{ma16176063}. As expected, the Ah measured during charging exceeded the 
+discharge capacity due to the inefficiencies; for this reason, the discharge test capacity was 
+adopted as the reference for all \ac{SOC} calculations and simulations throughout this work.
+
+The pulse discharge test produced an \ac{OCV}--\ac{SOC} curve spanning from $4.138\,\text{V}$ corresponding to a  
+$100\%$ \ac{SOC} to $3.029\,\text{V}$ for $0\%$ \ac{SOC}. The characteristic nonlinear shape, with a
+steeper slope at the higher and lower values of the \ac{SOC} and an almost linear region in between, 
+is consistent with the typical behaviour of a \ac{NMC} lithium-ion cells~\cite{HassanTantaNMC}. 
+The resulting lookup table was successfully implemented as the \ac{OCV}($z$) function in the 
+equivalent-circuit model and in both the \ac{SOC} and \ac{SOH} \ac{EKF} algorithms.
+
+\section{Parameter Identification}
+
+The algebraic parameter identification method of Devarakonda and Hu~\cite{DEVARAKONDA2014} was 
+applied to a two-level circuit. Twelve identification cycles were 
+completed, covering a \ac{SOC} range from approximately $8\%$ to $99\%$.
+
+The ohmic resistance $R_0$ and diffusion resistance $R_2$ were robustly identified across the full 
+\ac{SOC} range, showing low variability between cycles. Their values, in the range of 
+$2.1$--$2.6\,\text{m}\Omega$ and below $1.1\,\text{m}\Omega$ respectively, are consistent with 
+expected values for a cell of this capacity~\cite{SOCSOH}.
+
+The resistance $R_1$ and capacitance $C_1$ exhibited larger variability throughout the cycles, 
+therefore two cycles were excluded by following the criteria ($|E_{\text{extracted}} - 
+\text{OCV}(\text{SOC})| > 20\,\text{mV}$), and the validated cycles covered the range of 
+$16.6\%$--$99.9\%$ \ac{SOC}. This behaviour is consistent with the sensitivity analysis described 
+in Devarakonda and Hu~\cite{DEVARAKONDA2014}, when the test phase duration is short relative to 
+the slow RC time constant, the algorithm cannot reliably separate the contributions of $R_1$ and 
+$C_1$ from the initial capacitor voltage, making the individual values unreliable even when the 
+overall voltage fit is reasonable.
+
+The second-order Thévenin \ac{ECM} captures the dominant voltage response of the 
+cell adequately for the purpose of state estimation, as confirmed by the \ac{EKF} validation results. 
+However, the model cannot fully represent the complex electrochemical processes ocurring in a cell. 
+In particular, the steep regions of the \ac{OCV}--\ac{SOC} curve, the fully charged and fully discharged phases. 
+The complex behaviour in these regions cannot fully be captured by the linear RC structure. 
+This is reflected in the numerical unreliability of $R_1$ and $C_1$ at low 
+\ac{SOC} (approximately below $16\%$), and represents a known limitation of the \ac{ECM} approach 
+at the extremes of the operating range.
+
+\section{SOC Estimation with EKF}
+
+The \ac{SOC} estimator was evaluated across three current profiles representative of different scenarios. 
+Table~\ref{tab:SOC_RMSE} summarises the \ac{RMSE} results with respect 
+to the Coulomb-counting reference.
+
+\begin{table}[H]
+    \centering
+    \setlength{\arrayrulewidth}{0.7pt}
+    \renewcommand{\arraystretch}{1.3} 
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Test profile} & \textbf{RMSE [\%]} \\
+        \hline
+        Random steps ($0\,\text{A}$, $10\,\text{A}$, $30\,\text{A}$) & $0.691$ \\
+        \hline
+        Charge cycle (up to $20\,\text{A}$)                    & $0.942$ \\
+        \hline
+        Cyclic pulses ($10\,\text{A}$ and rest)                          & $1.141$ \\
+        \hline
+    \end{tabular}
+    \caption{SOC estimation \ac{RMSE} for the \ac{EKF} \ac{SOC} filter across the three test profiles.}
+    \label{tab:SOC_RMSE}
+\end{table}
+
+All three profiles produced \ac{RMSE} values below $1.15\%$, and the estimation error remained 
+within the $3\sigma$ bounds throughout each test. These results are consistent with values reported 
+in comparable \ac{EKF}--\ac{ECM} implementations in the literature, where errors on the order of 
+$1\%$--$2\%$ are typical for similar profiles~\cite{EKFEV}\cite{BatteryKalmanRaceCar}.
+
+The random step-current profile produced the lowest \ac{RMSE}. The charge test produced 
+an intermediate error.
+
+\section{Simultaneous SOC and SOH Estimation with Dual EKF}
+
+The dual \ac{EKF} was applied to the same three profiles, simultaneously estimating \ac{SOC} and 
+the \ac{SOH} parameters $R_0$ and $Q$. Table~\ref{tab:DualEKF_results} summarises the \ac{SOC} 
+\ac{RMSE} and the final \ac{SOH} estimates for each test.
+
+\begin{table}[H]
+    \centering
+    \small
+    \setlength{\arrayrulewidth}{0.7pt} 
+    \renewcommand{\arraystretch}{1.3} 
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Profile} & \textbf{SOC RMSE [\%]} & $Q$ [Ah] & $R_0$ [m$\Omega$] \\
+        \hline
+        Random steps  & $0.958$ & $27.92$  & $2.132$ \\
+        \hline
+        Charge cycle  & $1.390$ & $28.44$  & $2.246$ \\
+        \hline
+        Cyclic pulses & $0.943$ & $27.67$  & $2.134$ \\
+        \hline
+    \end{tabular}
+    \caption{Dual EKF results: SOC RMSE and final SOH estimates across the three test profiles.}
+    \label{tab:DualEKF_results}
+\end{table}
+
+% The \ac{SOC} \ac{RMSE} of the dual filter was higher than that of the \ac{SOC}
+% filter in all three profiles, which is expected, since during the parameter convergence transient the dual 
+% filter uses a slightly incorrect $Q$ to propagate the \ac{SOC}, introducing a transient error not 
+% present when $Q$ is fixed. Once the parameter filter converges, the \ac{SOC} error stabilises and 
+% remains within bounds.
+
+The capacity estimate $Q$ converged to values close to the characterised reference of 
+$27.616\,\text{Ah}$ for the discharge profiles, with the tightest convergence observed for the 
+cyclic pulse test $27.67\,\text{Ah}$, $3\sigma$. The charge cycle 
+produced a slightly higher estimate ($28.44\,\text{Ah}$), which reflects the Coulombic 
+inefficiency of the charging process. The total energy transferred during a full charge 
+exceeds the energy provided in a discharge cycle, and therefore the parameter filter partially interprets 
+additional charge as a larger capacity.
+
+The resistance estimates $R_0$ in all three profiles converged to values consistent with 
+those in the characterisation table at the corresponding \ac{SOC} levels. Values of 
+$R_0$ exceeding $100\%$ indicate that the online estimate is lower than the nominal 
+table value, reflecting that the filter adapts to the actual operating resistance, which can 
+differ from the characterisation value due to differences in current magnitude, temperature, and 
+operating history between the two tests.
+
+Overall, these results demonstrate that the dual \ac{EKF} framework is capable of tracking 
+both \ac{SOC} and the \ac{SOH} parameters simultaneously and consistently across different 
+current profiles.
+
+\section{Limitations and Future Work}
+
+The equivalent-circuit model does not account for temperature effects nor hysterisis. All experiments were 
+conducted at approximately ambient temperature but in a racing scenario, the cell temperature can vary 
+significantly during a race, which affects all model parameters. Incorporating temperature-dependent 
+parameter tables would improve the accuracy and robustness of the estimator 
+under real operating conditions.
+
+The parameter identification at low and high \ac{SOC} is incomplete due to the 
+numerical sensitivity of the algebraic method in regions where the \ac{OCV} gradient is steep,
+a methodology accounting for the electrochemical behaviour in these regions would improve the results.
+
+Future work could also explore the \ac{UKF} as an alternative to the \ac{EKF}. The \ac{UKF} avoids 
+the first-order linearisation used by the \ac{EKF}, and may provide improved accuracy in the 
+nonlinear regions of the \ac{OCV}--\ac{SOC} curve without a significant increase in 
+computational cost~\cite{plett2015battery}.
+
+Finally, validation under actual race current profiles, including the high peak currents and 
+rapid transients characteristic of a motorcycle competition, would further confirm the applicability of 
+the framework to the operational conditions for which it was designed.

@@ -1,0 +1,154 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Jadav(2015)]{CCCVcurve}
+Krishnarajsinh Jadav.
+\newblock Design a residential pv power system with battery energy storage.
+\newblock \emph{International Journal on Advances in Engineering Technology and Science}, 1, 12 2015.
+
+\bibitem[Plett(2015)]{plett2015battery}
+G.L. Plett.
+\newblock \emph{Battery Management Systems, Volume II: Equivalent-Circuit Methods}.
+\newblock Artech House power engineering and power electronics. Artech House, 2015.
+\newblock ISBN 9781630810283.
+\newblock URL \url{https://books.google.es/books?id=1kSPCwAAQBAJ}.
+
+\bibitem[Devarakonda and Hu(2014)]{DEVARAKONDA2014}
+Lalitha Devarakonda and Tingshu Hu.
+\newblock Algebraic method for parameter identification of circuit models for batteries under non-zero initial condition.
+\newblock \emph{Journal of Power Sources}, 268:\penalty0 928--940, 2014.
+\newblock ISSN 0378-7753.
+\newblock \doi{https://doi.org/10.1016/j.jpowsour.2014.06.069}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S0378775314009318}.
+
+\bibitem[{United States Environmental Protection Agency}(2026)]{epa_transportation_2024}
+{United States Environmental Protection Agency}.
+\newblock Transportation sector emissions, 2026.
+\newblock URL \url{https://www.epa.gov/ghgemissions/transportation-sector-emissions}.
+\newblock Accessed: 2026-04-09.
+
+\bibitem[{European Parliament}(2022)]{europarl_2022_cars}
+{European Parliament}.
+\newblock {EU} ban on sale of new petrol and diesel cars from 2035 explained, 2022.
+\newblock URL \url{https://www.europarl.europa.eu/topics/en/article/20221019STO44572/eu-ban-on-sale-of-new-petrol-and-diesel-cars-from-2035-explained}.
+\newblock Accessed: April 8, 2026.
+
+\bibitem[{Intergovernmental Panel on Climate Change (IPCC)}(2022)]{IPCC2022_Mitigation}
+{Intergovernmental Panel on Climate Change (IPCC)}.
+\newblock \emph{Climate Change 2022: Mitigation of Climate Change}.
+\newblock Cambridge University Press, Cambridge, UK and New York, NY, USA, 2022.
+\newblock \doi{10.1017/9781009157926}.
+\newblock URL \url{https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2929481A59B59C57C743A79420A2F9FF/9781009157933AR.pdf}.
+
+\bibitem[Ralls et~al.(2023)Ralls, Leong, Clayton, Fuelling, Mercer, Navarro, and Menezes]{ma16176063}
+Alessandro~M. Ralls, Kaitlin Leong, Jennifer Clayton, Phillip Fuelling, Cody Mercer, Vincent Navarro, and Pradeep~L. Menezes.
+\newblock The role of lithium-ion batteries in the growing trend of electric vehicles.
+\newblock \emph{Materials}, 16\penalty0 (17), 2023.
+\newblock ISSN 1996-1944.
+\newblock \doi{10.3390/ma16176063}.
+\newblock URL \url{https://www.mdpi.com/1996-1944/16/17/6063}.
+
+\bibitem[Bosello(2025)]{Bosello2025}
+Michael Bosello.
+\newblock \emph{Race smart, last longer: Deep learning approaches for Li-ion battery state estimation and autonomous racing vehicles}.
+\newblock Phd thesis, Alma Mater Studiorum -- Università di Bologna, 2025.
+\newblock URL \url{https://amsdottorato.unibo.it/id/eprint/11872/1/bosello_michael_tesi.pdf}.
+
+\bibitem[Mot(2026)]{MotoStudent2026Regulations}
+\emph{MS2627 MotoStudent Regulations V1.0}.
+\newblock MotoStudent, 2026.
+\newblock URL \url{https://www.motostudent.com/pluginfile.php/292558/mod_resource/content/1/MS2627_MotoStudent%20Regulations%20V1.0.pdf}.
+\newblock Accessed: 2026-05-26.
+
+\bibitem[{Beijing WeLion New Energy Technology Co., Ltd.}(2026)]{welion2026shp270}
+{Beijing WeLion New Energy Technology Co., Ltd.}
+\newblock {SHP270-30 High Power Density Semi-Solid State Battery Cell Specification}, 2026.
+\newblock URL \url{https://welion-energy.com/SHP270-30/30000112}.
+\newblock Accessed: 2026-04-29.
+
+\bibitem[Harraz(2025)]{HassanTantaNMC}
+Hassan Harraz.
+\newblock Nickel-manganese-cobalt (nmc) lithium-ion batteries, 01 2025.
+\newblock URL \url{https://www.researchgate.net/publication/387951658_Nickel-Manganese-Cobalt_NMC_Lithium-ion_Batteries}.
+
+\bibitem[Jayaraman and Vemireddy(2019)]{EVERLASTING_D6.7}
+Bharanitharan Jayaraman and Prashanth Vemireddy.
+\newblock Battery management system standard.
+\newblock Deliverable D6.7, LION Smart GmbH, August 2019.
+\newblock URL \url{https://everlasting-project.eu/bms-standardization/}.
+\newblock Project: EVERLASTING (Electric Vehicle Enhanced Range, Lifetime And Safety Through INGenious battery management), Grant Agreement No 713771.
+
+\bibitem[Luo and Chen(2021)]{EKFEV}
+Longzhou Luo and Gang Chen.
+\newblock Research on soc estimation of lithium battery for electric vehicle based on ekf algorithm.
+\newblock In \emph{2021 International Conference on Power System Technology (POWERCON)}, pages 820--823, 2021.
+\newblock \doi{10.1109/POWERCON53785.2021.9697601}.
+
+\bibitem[Gjengedal et~al.(2017)Gjengedal, Vie, and Molinas]{BatteryKalmanRaceCar}
+Ørjan Gjengedal, Preben Joakim~Svela Vie, and Marta Molinas.
+\newblock Battery modeling and kalman filter-based state-of-charge estimation for a race car application.
+\newblock In \emph{2017 IEEE 14th International Conference on Networking, Sensing and Control (ICNSC)}, pages 561--567, 2017.
+\newblock \doi{10.1109/ICNSC.2017.8000153}.
+
+\bibitem[Zhang et~al.(2016)Zhang, Wu, and Kang]{UKFDynamPar}
+Xinrong Zhang, Jiaxiang Wu, and Guangqing Kang.
+\newblock Soc estimation of lithium battery by ukf algorithm based on dynamic parameter model.
+\newblock In \emph{2016 13th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI)}, pages 945--950, 2016.
+\newblock \doi{10.1109/URAI.2016.7734116}.
+
+\bibitem[Liu et~al.(2021)Liu, Zhou, Yao, Chen, Ke, and Liao]{SOCSOH}
+Yunxin Liu, Jinhui Zhou, Liangzhong Yao, Chao Chen, Deping Ke, and Siyang Liao.
+\newblock A multi-time scale joint online soc and soh estimation method for energy storage system.
+\newblock In \emph{2021 IEEE 2nd China International Youth Conference on Electrical Engineering (CIYCEE)}, pages 1--6, 2021.
+\newblock \doi{10.1109/CIYCEE53554.2021.9676934}.
+
+\bibitem[Yang(2023)]{SOHBook}
+Shichun Yang.
+\newblock \emph{Advanced Battery Management System for Electric Vehicles}.
+\newblock Key Technologies on New Energy Vehicles. Springer Nature Singapore, Singapore, 1st ed. 2023. edition, 2023.
+\newblock ISBN 981-19-3490-8.
+
+\bibitem[Wang et~al.(2025)Wang, Yin, Wang, Li, Du, and Su]{Wang2025LithiumIonBS}
+Haozeng Wang, Kun Yin, Shiyu Wang, Jiahong Li, Ziqiang Du, and Jianhui Su.
+\newblock Lithium-ion battery soc estimation based on the joint algorithm of mils online parameter identification and fuzzy control-improved extended kalman filter.
+\newblock \emph{2025 International Conference on New Power System Technology (PowerCon)}, pages 1--6, 2025.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:284160828}.
+
+\bibitem[Xu et~al.(2020)Xu, Wu, Zhou, Ma, Shi, and Li]{SOCLowSpeedNeuralNetwork}
+Menglong Xu, Wenguang Wu, Wenwen Zhou, Yuanyuan Ma, Xiaolei Shi, and Jun Li.
+\newblock State of charge estimation of low-speed electric vehicle battery using back propagation neural network.
+\newblock pages 1438--1443, 2020.
+\newblock \doi{10.1109/ISPA-BDCloud-SocialCom-SustainCom51426.2020.00215}.
+
+\bibitem[Welch et~al.(1995)Welch, Bishop, et~al.]{welch1995}
+Greg Welch, Gary Bishop, et~al.
+\newblock An introduction to the kalman filter.
+\newblock 1995.
+
+\bibitem[{Ministerio de Educación, Cultura y Deporte}(2003)]{boe2003rd1125}
+{Ministerio de Educación, Cultura y Deporte}.
+\newblock {Real Decreto 1125/2003, de 5 de septiembre, por el que se establece el sistema europeo de créditos y el sistema de calificaciones en las titulaciones universitarias de carácter oficial y validez en todo el territorio nacional}, September 2003.
+\newblock URL \url{https://www.boe.es/buscar/act.php?id=BOE-A-2003-17643}.
+\newblock Artículo 4. Asignación de créditos.
+
+\bibitem[PVP(2026)]{PVPC2026}
+Precio de la luz en 2026 -- resumen anual pvpc españa.
+\newblock \url{https://www.euribor.com.es/precio-luz/ano/2026}, 2026.
+\newblock Accessed: 2026-07-04.
+
+\bibitem[mat(2026)]{matlabpricing2026}
+Matlab license cost.
+\newblock \url{https://la.mathworks.com/store/link/products/student/STUDENT}, 2026.
+\newblock Accessed: 2026-07-04.
+
+\bibitem[{Oficina Catalana del Canvi Climàtic}(2026)]{canviclimatic}
+{Oficina Catalana del Canvi Climàtic}.
+\newblock Factors d'emissió associats a l'energia.
+\newblock \url{https://canviclimatic.gencat.cat/ca/actua/factors_demissio_associats_a_lenergia/index.html}, 2026.
+\newblock Factor de xarxa elèctrica espanyola: 0.258 kg CO2e/kWh (mix 2025, publicat per la CNMC el 28 d'abril de 2026). Accessed: 2026-07-04.
+
+\end{thebibliography}

@@ -1,0 +1,74 @@
+\chapter{Planning}\label{sec:Planning}
+
+The work presented in this thesis was carried out between February and July 2026, 
+divided into four phases: literature review and model development, 
+experimental characterisation of the cell, implementation and validation of the 
+Extended Kalman Filter algorithms, and thesis writing. Figure~\ref{fig:GanttChart} 
+presents the Gantt chart summarising the timeline of the work performed.
+
+The characterisation phase was constrained by the availability of laboratory 
+equipment (cycler, power analyser, and setup), which delayed the start of the discharge, 
+charge, pulse, and steps tests relative to the initial plan. To keep the project on 
+schedule the parameter identification code, the \ac{SOH} estimation algorithm, and 
+the corresponding sections of the Methodology chapter were developed in parallel 
+while waiting for equipment availability and the setup.
+
+\definecolor{thesisgreen}{HTML}{82D982}
+\definecolor{thesisblue}{HTML}{8282FF}
+\definecolor{thesispink}{HTML}{FF82FF}
+
+\begin{landscape}
+    \begin{figure}[p]
+        \centering
+        \begin{ganttchart}[
+            vgrid,
+            hgrid,
+            x unit=0.60cm,
+            y unit title=0.58cm,
+            y unit chart=0.58cm,
+            title height=1,
+            bar height=0.65,
+            bar/.append style={fill=thesisgreen},
+            group/.append style={fill=thesisblue},
+            milestone/.append style={fill=thesispink},
+        ]{1}{24}
+            \gantttitle{2026}{24} \\
+            \gantttitle{Feb}{3} \gantttitle{Mar}{5} \gantttitle{Apr}{4}
+            \gantttitle{May}{5} \gantttitle{Jun}{4} \gantttitle{Jul}{3} \\
+            \gantttitlelist{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24}{1} \\
+    
+            \ganttgroup{Background research \& model development}{1}{18} \\
+            \ganttbar{Literature review \& background research}{1}{6} \\
+            \ganttmilestone{Supervisor meeting}{6} \\
+            \ganttbar{MATLAB EKF framework adaptation}{6}{15} \\
+            \ganttmilestone{Supervisor meeting}{15} \\
+            \ganttbar{Preface, Introduction \& Methodology (initial draft)}{15}{16} \\
+            \ganttbar{SOH estimation algorithm: research \& MATLAB implementation}{16}{18} \\
+    
+            \ganttgroup{Experimental characterisation}{18}{22} \\
+            \ganttbar{Charge \& discharge testing (cycler + power analyser)}{18}{21} \\
+            \ganttbar{Methodology update: charge/discharge test procedures}{19}{19} \\
+            \ganttbar{Results writing: charge \& discharge tests}{20}{20} \\
+            \ganttbar{Pulse discharge test (OCV-SOC characterisation)}{20}{21} \\
+            \ganttbar{Results writing: pulse test / OCV-SOC curve}{21}{21} \\
+            \ganttbar{Random step-current test (trial \& final runs)}{21}{22} \\
+            \ganttbar{Results writing: random step-current test}{22}{22} \\
+            
+            \ganttgroup{EKF implementation, validation \& Results}{22}{23}\\
+            \ganttbar{Battery model integration into Algorithms}{22}{22} \\
+            \ganttbar{EKF/ dual tuning, validation \& results}{22}{23} \\
+            \ganttbar{EKF Results chapter, abstract, resumen \& resum}{22}{22} \\
+            \ganttbar{Final revisions and polishing}{22}{22} \\
+    
+            \ganttgroup{Finalisation \& defence}{22}{24} \\
+            \ganttbar{Planning, economic, environmental \& gender sections}{22}{22} \\
+            \ganttbar{Final review \& submission}{22}{23} \\
+            \ganttmilestone{Thesis submission}{23} \\
+            \ganttbar{Thesis defence preparation}{23}{23} \\
+            \ganttmilestone{Thesis defence}{24}
+    
+        \end{ganttchart}
+        \caption{Gantt chart of the thesis timeline, February to July 2026.}
+        \label{fig:GanttChart}
+    \end{figure}
+    \end{landscape}

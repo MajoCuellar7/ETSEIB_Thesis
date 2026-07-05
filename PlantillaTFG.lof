@@ -1,0 +1,50 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Second-order Thévenin equivalent circuit model.}}{8}{figure.caption.143}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Battery test setup, power analyzer(green), batteries (lilac), and National Instruments microcontroller (pink).}}{10}{figure.caption.148}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Generic \ac {CC-CV} charging profile characterisation curve~\cite {CCCVcurve}.\footnotemark }}{12}{figure.caption.149}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Representation of the current pulses.\footnotemark }}{13}{figure.caption.150}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Second-order Thévenin equivalent circuit model connected to a load.}}{15}{figure.caption.152}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Prediction and Correction steps in an Exteded Kalman Filter algorithm}}{18}{figure.caption.157}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Prediction and Correction steps in an Exteded Kalman Filter algorithm}}{19}{figure.caption.158}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Interaction between \acs {SOC} and \acs {SOH} Extended Kalman Filters using Dual Estimation~\cite {plett2015battery}.}}{19}{figure.caption.160}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Current (lilac) and voltage (green) curves of the \acs {NMC} battery during the discharge test.}}{29}{figure.caption.162}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Current (lilac) and voltage (green) curves of the \acs {NMC} battery during the charge test.}}{30}{figure.caption.163}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Current (lilac) and voltage (green) curves of the \acs {NMC} battery during the pulses test.}}{31}{figure.caption.164}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces OCV-SOC curve of the \acs {NMC} battery.}}{32}{figure.caption.165}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Resistors $R_0$ (pink), $R_1$ (green), and $R_2$ (lilac) values of the \acs {NMC} battery.}}{33}{figure.caption.166}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Capacitors $C_1$ (lilac) and $C_2$ (green) values of the \acs {NMC} battery.}}{34}{figure.caption.167}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces OCV vs. SOC curves, obtained through algebraic method (lilac)~\cite {DEVARAKONDA2014} and curve obtained by pulse test (green) in Section~\ref {PulsesTestsResults} of the \acs {NMC} battery}}{35}{figure.caption.168}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces SOC in time comparing Coulomb Counting method (lilac) and EKF estimator (green) during the charging cycle of the \acs {NMC} battery.}}{36}{figure.caption.170}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Error between CC and EKF SOC estimator during the charging cycle of the \acs {NMC} battery.}}{36}{figure.caption.171}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces SOC in time comparing Coulomb Counting method (lilac) and EKF estimator (green) during the pulses cycle of the \acs {NMC} battery.}}{37}{figure.caption.172}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Error between CC and EKF SOC estimator during the pulses cycle of the \acs {NMC} battery.}}{37}{figure.caption.173}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces SOC in time comparing Coulomb Counting method (lilac) and EKF estimator (green) during the random steps cycle of the \acs {NMC} battery.}}{38}{figure.caption.174}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Error between CC and EKF SOC estimator during the random steps cycle of the \acs {NMC} battery.}}{38}{figure.caption.175}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Capacity evolution during the \acs {CC-CV} charging cycle of the \acs {NMC} battery (constant-current phase at $20\,\text {A}$ up to approximately $70\,\text {min}$, followed by the constant-voltage phase until the current dropped below $2.009\,\text {A}$), sampled at $\Delta t = 1\,\text {s}$. Estimated capacity (green) and nominal capacity (lilac).}}{39}{figure.caption.176}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Resistor $R_0$ evolution during the \acs {CC-CV} charging cycle of the \acs {NMC} battery (constant-current phase at $20\,\text {A}$ up to approximately $70\,\text {min}$, followed by the constant-voltage phase), sampled at $\Delta t = 1\,\text {s}$. Estimated resistor (green) and characterised resistor (lilac).}}{39}{figure.caption.177}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces SOC in time comparing Coulomb Counting method (lilac) and SOC \& SOH EKF estimator (green) during the charging cycle of the \acs {NMC} battery.}}{40}{figure.caption.178}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Error between CC and dual EKF SOC estimator during the charging cycle of the \acs {NMC} battery.}}{40}{figure.caption.179}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Capacity evolution during the cyclic pulse discharge of the \acs {NMC} battery ($10\,\text {A}$ pulses of $10\,\text {min}$ separated by $3\,\text {min}$ rest periods, until full discharge), sampled at $\Delta t = 1\,\text {s}$. Estimated capacity (green) and nominal capacity (lilac).}}{41}{figure.caption.180}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Resistor evolution during the cyclic pulse discharge of the \acs {NMC} battery ($10\,\text {A}$ pulses of $10\,\text {min}$ separated by $3\,\text {min}$ rest periods, until full discharge), sampled at $\Delta t = 1\,\text {s}$. Estimated resistor (green) and characterised resistor (lilac).}}{41}{figure.caption.181}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces SOC in time comparing Coulomb Counting method (lilac) and SOC \& SOH EKF estimator (green) during the pulses cycle of the \acs {NMC} battery.}}{42}{figure.caption.182}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Error between CC and dual EKF SOC estimator during the pulses cycle of the \acs {NMC} battery.}}{42}{figure.caption.183}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces apacity evolution during the random step-current discharge of the \acs {NMC} battery (steps between $0\,\text {A}$, $10\,\text {A}$, and $30\,\text {A}$), sampled at $\Delta t = 1\,\text {s}$. Estimated capacity (green) and nominal capacity (lilac).}}{43}{figure.caption.184}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Resistor $R_0$ evolution during the random step-current discharge of the \acs {NMC} battery (steps between $0\,\text {A}$, $10\,\text {A}$, and $30\,\text {A}$), sampled at $\Delta t = 1\,\text {s}$. Estimated resistor (green) and characterised resistor (lilac).}}{43}{figure.caption.185}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces SOC in time comparing Coulomb Counting method (lilac) and SOC \& SOH EKF estimator (green) during the random steps cycle of the \acs {NMC} battery.}}{44}{figure.caption.186}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Error between CC and dual EKF SOC estimator during the random steps cycle of the \acs {NMC} battery.}}{44}{figure.caption.187}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Comparison of \acs {SOC} estimation between the Coulomb-counting reference (lilac), the \acs {SOC} \acs {EKF} filter (pink), and the \acs {SOC} \& \acs {SOH} \acs {EKF} (green) during the \acs {CC-CV} charging cycle (constant-current phase at $20\,\text {A}$ up to approximately $70\,\text {min}$, followed by the constant-voltage phase), sampled at $\Delta t = 1\,\text {s}$.}}{45}{figure.caption.189}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Comparison of Error between CC and the \acs {SOC} \acs {EKF} filter (pink), and the \acs {SOC} \& \acs {SOH} \acs {EKF} (green) during the \acs {CC-CV} charging cycle (constant-current phase at $20\,\text {A}$ up to approximately $70\,\text {min}$, followed by the constant-voltage phase), sampled at $\Delta t = 1\,\text {s}$.}}{45}{figure.caption.190}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Comparison of \acs {SOC} estimation between the Coulomb-counting reference (lilac), the \acs {SOC} \acs {EKF} filter (pink), and the \acs {SOC} \& \acs {SOH} \acs {EKF} (green) during the cyclic pulse discharge of the \acs {NMC} battery ($10\,\text {A}$ pulses of $10\,\text {min}$ separated by $3\,\text {min}$ rest periods, until full discharge), sampled at $\Delta t = 1\,\text {s}$.}}{46}{figure.caption.191}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Error between CC and the \acs {SOC} \acs {EKF} filter (pink), and the \acs {SOC} \& \acs {SOH} \acs {EKF} (green) during the cyclic pulse discharge of the \acs {NMC} battery ($10\,\text {A}$ pulses of $10\,\text {min}$ separated by $3\,\text {min}$ rest periods, until full discharge), sampled at $\Delta t = 1\,\text {s}$.}}{46}{figure.caption.192}%
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Comparison of \acs {SOC} estimation between the Coulomb-counting reference (lilac), the \acs {SOC} \acs {EKF} filter (pink), and the \acs {SOC} \& \acs {SOH} \acs {EKF} (green) during the random step-current discharge of the \acs {NMC} battery (steps between $0\,\text {A}$, $10\,\text {A}$, and $30\,\text {A}$), sampled at $\Delta t = 1\,\text {s}$.}}{47}{figure.caption.193}%
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Error between CC and the \acs {SOC} \acs {EKF} filter (pink), and the \acs {SOC} \& \acs {SOH} \acs {EKF} (green) during the random step-current discharge of the \acs {NMC} battery (steps between $0\,\text {A}$, $10\,\text {A}$, and $30\,\text {A}$), sampled at $\Delta t = 1\,\text {s}$.}}{47}{figure.caption.194}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Gantt chart of the thesis timeline, February to July 2026.}}{49}{figure.caption.195}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
